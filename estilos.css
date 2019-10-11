@@ -1,0 +1,19 @@
+/* enlace sin visitar */
+a:link {
+    color: #FF0000;
+}
+
+/* enlace visitado */
+a:visited {
+    color: #00FF00;
+}
+
+/* ratón sobre el enlace */
+a:hover {
+color: #FF00FF;
+    }
+
+/* enlace seleccionado */
+a:active {
+    color: #0000FF;
+}
