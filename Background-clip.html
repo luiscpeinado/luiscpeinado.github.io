@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Background-clip</title>
+    <style>
+    #example1 {
+      border: 10px dotted black;
+      padding: 15px;
+      background: lightblue;
+      background-clip: border-box;  
+    }
+
+    #example2 {
+      border: 10px dotted black;
+      padding: 15px;
+      background: lightblue;
+      background-clip: padding-box;
+    }
+
+    #example3 {
+      border: 10px dotted black;
+      padding: 15px;
+      background: lightblue;
+      background-clip: content-box;
+    }
+    </style>
+</head>
+<body>
+
+<h1>Propiedad background-clip</h1>
+
+<p>Define cuánto se debe extender el fondo dentro de un elemento.</p>
+
+<p>background-clip: border-box (este es por defecto):</p>
+<div id="example1">
+  <p>El borde se extiende por todo el borde.</p>
+</div>
+
+<p>background-clip: padding-box:</p>
+<div id="example2">
+  <p>El fondo se extiendo dentro de los límites del borde.</p>
+</div>
+
+<p>background-clip: content-box:</p>
+<div id="example3">
+  <p>El fondo se extiende sólo por el contenido.</p>
+</div>
+
+</body>
+</html>
