@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Ejemplo white-space</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+      section {
+          width: 550px;
+          border: solid 1px;
+      }
+      pre.normal { white-space: normal; }
+      pre.pre { white-space: pre; }
+      pre.prewrap { white-space: pre-wrap; }
+      pre.nowrap { white-space: nowrap; }
+      pre.preline { white-space: pre-line; }
+  </style>
+</head>
+
+<body>
+<section><pre class="normal">Primera línea.
+Segunda línea, seguida de una línea en blanco.
+
+Cuarta línea, con cinco espacios en blanco entre paréntesis: (     ).
+Quinta línea. Esta línea es muy larga para ver si el navegador mantiene todo en la misma línea o si lo muestra en varias líneas, de acuerdo con el espacio disponible.</pre>
+</section>
+    
+<section><pre class="pre">Primera línea.
+Segunda línea, seguida de una línea en blanco.
+
+Cuarta línea, con cinco espacios en blanco entre paréntesis: (     ).
+Quinta línea. Esta línea es muy larga para ver si el navegador mantiene todo en la misma línea o si lo muestra en varias líneas, de acuerdo con el espacio disponible.</pre>
+</section>
+    
+<section><pre class="prewrap">Primera línea.
+Segunda línea, seguida de una línea en blanco.
+
+Cuarta línea, con cinco espacios en blanco entre paréntesis: (     ).
+Quinta línea. Esta línea es muy larga para ver si el navegador mantiene todo en la misma línea o si lo muestra en varias líneas, de acuerdo con el espacio disponible.</pre>
+</section>
+    
+<section><pre class="nowrap">Primera línea.
+Segunda línea, seguida de una línea en blanco.
+
+Cuarta línea, con cinco espacios en blanco entre paréntesis: (     ).
+Quinta línea. Esta línea es muy larga para ver si el navegador mantiene todo en la misma línea o si lo muestra en varias líneas, de acuerdo con el espacio disponible.</pre>
+</section>
+
+<section><pre class="preline">Primera línea.
+Segunda línea, seguida de una línea en blanco.
+
+Cuarta línea, con cinco espacios en blanco entre paréntesis: (     ).
+Quinta línea. Esta línea es muy larga para ver si el navegador mantiene todo en la misma línea o si lo muestra en varias líneas, de acuerdo con el espacio disponible.</pre>
+</section>
+</body>
+</html>

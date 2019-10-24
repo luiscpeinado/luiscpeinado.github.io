@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Ejemplo font-size</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    h1 {
+      font-size: 40px;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+    h3 {
+      font-size: 1.5em; 
+     }
+
+    p.relativo {
+      font-size: 0.875em;
+    }
+    
+    p.xx-large {
+      font-size: xx-large;
+    }
+    p.x-large {
+      font-size: x-large;
+    }
+    p.large {
+      font-size: large;
+    }
+    p.medium {
+      font-size: medium;
+    }
+    p.small {
+      font-size: small;
+    }
+    p.x-small {
+      font-size: x-small;
+    }
+    p.xx-small {
+      font-size: x-small;
+    }
+    
+    ul {
+      font-size: smaller;
+    }
+</style>
+</head>
+
+<body>
+    <p class="xx-large">Esto es un párrafo de tamaño xx-large.</p>
+    <p class="x-large">Esto es un párrafo de tamaño x-large.</p>
+    <p class="large">Esto es un párrafo de tamaño large.</p>
+    <p class="medium">Esto es un párrafo de tamaño medium.</p>
+    <p class="small">Esto es un párrafo de tamaño small.</p>
+    <p class="x-small">Esto es un párrafo de tamaño x-small.</p>
+    <p class="xx-small">Esto es un párrafo de tamaño xx-small.</p>
+<div style="padding: .5em"></div>
+    <p>En el ejemplo siguiente, la hoja de estilo establece que una lista tiene que tener un tamaño menor que el elemento padre. Si se escriben listas anidadas, cada sublista es cada vez más pequeña. Cuando se llega al límite inferior, el navegador puede seguir reduciendo la letra o dejarla en xx-small.</p>
+    <ul>
+    <li>Lista 1
+      <ul>
+        <li>Lista 2
+          <ul>
+            <li>Lista 3
+              <ul>
+                <li>Lista 4</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    </ul>
+    <h1>Encabezado h1 con tamaño 40px</h1>
+    <h2>Encabezado h2 con tamaño 30px</h2>
+    <h3>Encabezado con tamaño 1.5em</h3>
+    <p class="relativo">Este párrafo tiene establecido un tamaño relativo de 0.875em</p>
+</body>
+</html>
