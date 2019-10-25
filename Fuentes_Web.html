@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Fuentes web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    @font-face {
+      font-family: "Mystery Quest";
+      src: url("fonts/mystery-quest-v7-latin-regular.woff2")
+    }
+ 
+    @font-face {
+       font-family: myFirstFont;
+       src: url(sansation_light.woff);
+    }
+
+    @font-face {
+       font-family: myFirstFont;
+       src: url(sansation_bold.woff);
+       font-weight: bold;
+    }
+
+    * {
+       font-family: myFirstFont;
+    }
+
+    p.mistery {
+      font-family: "Mystery Quest", cursive;
+      font-size: 150%;
+    }
+
+    @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+    p.montse {
+      font-family: font-family: 'Montserrat', sans-serif;
+      font-size: 150%;
+    }
+</style>
+</head>
+
+<body>
+    <h1>La Regla @font-face</h1>
+
+    <div>
+    Con CSS los sitios web pueden utilizar <b>fuentes distintas a las denomidanas "fuentes seguras".</b>.
+    </div>
+    
+    <p class="mistery">Esto es un párrafo con fuente web Mystery Quest al 150%.</p>
+    
+    <p class="montse">Esto es un párrafo con fuente web Montserrat descargada de GOOGLE fonts</p>
+    
+</body>
+</html>
