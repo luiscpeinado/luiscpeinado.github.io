@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Display</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    .a { display: none; }
+    .b { display: inline; }
+    .c { display: block; }
+    .d { display: inline-block; }
+     p { color: purple; border: dotted; }
+
+    span.a {
+      display: inline; /* the default for span */
+      width: 100px;
+      height: 100px;
+      padding: 5px;
+      border: 1px solid blue;  
+      background-color: yellow; 
+    }
+
+    span.b {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      padding: 5px;
+      border: 1px solid blue;    
+      background-color: yellow; 
+    }
+
+    span.c {
+      display: block;
+      width: 100px;
+      height: 100px;
+      padding: 5px;
+      border: 1px solid blue;    
+      background-color: yellow; 
+    }
+</style>
+</head>
+<body>  
+    <h2>Propiedad Display</h2>
+
+    <h3>display: none:</h3>
+  <h4>none: No se muestran los elementos ni su espacio</h4>
+    <p class="a">Bloque1 </p> 
+    <p class="a">Bloque2 </p> 
+    <p class="a">Bloque3 </p> 
+
+    <h3>display: inline:</h3>
+  <h4>inline: Muestra en la misma línea (respetando el flujo) todos los elementos y no acepta las propiedades width, height ni margenes verticales.</h4>
+    <p class="b">Bloque1 </p> 
+    <p class="b">Bloque2 </p> 
+    <p class="b">Bloque3 </p> 
+
+    <h3>display: block:</h3>
+  <h4>block: Muestra los elementos en líneas independientes y acepta las propiedades width, height y margenes verticales.</h4>
+    <p class="c">Bloque1 </p> 
+    <p class="c">Bloque2 </p> 
+    <p class="c">Bloque3 </p> 
+
+    <h3>display: inline-block:</h3>
+  <h4>inline-block: Su comportamiento es una mezcla entre los dos anteriores, se muestran en la misma línea (respetando el flujo) todos los elementos y además, acepta las propiedades width, height y margenes verticales.</h4>
+    <p class="d">Bloque1 </p> 
+    <p class="d">Bloque2 </p> 
+    <p class="d">Bloque3 </p>
+
+
+<h1>Ejemplos con elementos inline</h1>
+
+<h2>display: inline</h2>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="a">Aliquam</span> <span class="a">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+<h2>display: inline-block</h2>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="b">Aliquam</span> <span class="b">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+
+<h2>display: block</h2>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="c">Aliquam</span> <span class="c">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+    
+    </body>
+</html>
