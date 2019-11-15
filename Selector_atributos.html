@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selector de atributos</title>
+<style>
+a[target] {
+  background-color: yellow;
+}
+a[target="_blank"] {
+  background-color: yellow;
+}
+
+[title~=flower] {
+  border: 5px solid yellow;
+}
+
+[class|=top] {
+  background: yellow;
+}
+
+[class$="test"] {
+  background: yellow;
+}
+
+[class*="te"] {
+  background: yellow;
+}
+
+input[type="text"] {
+  width: 150px;
+  display: block;
+  margin-bottom: 10px;
+  background-color: yellow;
+}
+
+input[type="button"] {
+  width: 120px;
+  margin-left: 35px;
+  display: block;
+}
+</style>
+</head>
+<body>
+<h3>Selector[atributo]</h3>
+<p>Los enlaces con atributo target tendrán fondo amarillo</p>
+
+<a href="https://www.google.com">google.com</a>
+<a href="http://www.marca.com" target="_blank">marca.com</a>
+<a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+
+<h3>Selector[atributo="valor"]</h3>
+<p>Los enlaces con el atributo target="_blank" tendrán el fondo amarillo</p>
+
+<a href="https://www.google.com">google.com</a>
+<a href="http://www.marca.com" target="_blank">marca.com</a>
+<a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+
+<h3>Selector[atributo~="valor"]</h3>
+<p>Todas las imágenes con la palabra "flor" en el atributo title tendrán un borde amarillo.</p>
+
+<img src="images/klematis.jpg" alt="Florecilla" title="klematis flower" width="150" height="113">
+<img src="images/img_flwr.gif" alt="Florecilla" title="flower" width="224" height="162">
+<img src="images/img_tree.gif" alt="Florecilla" title="tree" width="200" height="358">
+
+<h3>Selector[atributo|="valor"]</h3>
+<p>Todo el texto que pertenezca a una clase que empiece por la palabra top (palabra completa) tendrá fondo amarillo.</p>
+
+<h1 class="top-header">Bienvenidos</h1>
+<p class="top-text">Hola qué tal!</p>
+<p class="topcontent">Todo bien por ahí?</p>
+
+<h3>Selector[atributo^="valor"]</h3>
+<p>Todo el texto que pertenezca a una clase que empiece por top tendrá fondo amarillo.</p>
+
+<h1 class="top-header">Bienvenidos</h1>
+<p class="top-text">Hola qué tal!</p>
+<p class="topcontent">Todo bien por ahí?</p>
+
+<h3>Selector[atributo$="valor"]</h3>
+<p>Todo el texto que pertenezca a una clase que termine por test tendrá fondo amarillo.</p>
+
+<div class="first_test">El primer elemento div class="first_test".</div>
+<div class="second">El segundo elemento div class="second".</div>
+<div class="my-test">El tercer elemento div class="my-test".</div>
+<p class="mytest">Esto es un párrafo cualquiera class="mytest".</p>
+
+<h3>Selector[atributo*="valor"]</h3>
+<p>Todo el texto que pertenezca a una clase que contenga por "te" tendrá fondo amarillo.</p>
+
+<div class="first_test">El primer elemento div class="first_test".</div>
+<div class="second">El segundo elemento div class="second".</div>
+<div class="my-test">El tercer elemento div class="my-test".</div>
+<p class="mytest">Esto es un párrafo cualquiera class="mytest".</p>
+
+<h3>Los selectores de atributos pueden ser útiles para diseñar formularios sin clase o ID</h3>
+<form name="input" action="" method="get">
+  Firstname:<input type="text" name="Name" value="Peter" size="20">
+  Lastname:<input type="text" name="Name" value="Griffin" size="20">
+  <input type="button" value="Example Button">
+</form>
+
+</body>
+</html>
