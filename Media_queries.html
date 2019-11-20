@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Media queries</title>
+<style>
+.caja:after {
+    content:"en pantalla grande";
+}
+@media screen and (max-width: 1024px) {
+    .caja:after {
+        content:"en una tablet";
+    }
+}
+@media screen and (max-width: 480px) {
+    .caja:after {
+        content:"en un móvil";
+    }
+}
+</style>
+</head>
+    <body>
+       <h3>Ejemplo de media queries</h3>
+      <div class="caja">Así se ve en </div>
+    </body>
+</html>
