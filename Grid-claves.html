@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID CSS</title>
+    <style>
+        body {
+          font-size:12px;
+          font-family: Verdana, Geneva, sans-serif;
+          line-height: 2em;
+          background-color:#222;
+          color:#FFF;
+          padding:1em;
+        }
+        
+        #cuadricula {
+          display: grid;
+          grid-template-columns:max-content min-content 1fr;
+          grid-gap:1em;
+        }
+        
+        .item {
+          padding:1em;
+          border: 1px solid #000;
+          border-radius: 10px;
+          background-color: #3E989B;
+        }
+        .item:nth-of-type(1) {
+            background-color: #3E989B;
+        }
+        
+        .item:nth-of-type(2) {
+            background-color: #6DB465;
+        }
+        
+        .item:nth-of-type(3) {
+            background-color: #F2C14E;
+        }
+        
+        .item:nth-of-type(4) {
+            background-color: #F78154;
+        }
+        
+        .item:nth-of-type(5) {
+            background-color: #C87694;
+        }
+    </style>
+</head>
+<body>
+<div id="cuadricula">
+  <div class="item"><p>grid-template-columns: <strong>max-content</strong> min-content 1fr;</p></div>
+<div class="item"><p>grid-template-columns: max-content <strong>min-content</strong> 1fr;</p></div>
+<div class="item"><p>3</p></div>
+<div class="item"><p>4</p></div>
+<div class="item"><p>5</p></div>
+</div>
+</body>
+</html>

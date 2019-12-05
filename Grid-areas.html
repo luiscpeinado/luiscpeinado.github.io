@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID CSS</title>
+    <style>
+        header {
+            background-color: cornsilk;
+
+        }
+        body {margin: 0;}
+        article {
+            background: azure;
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: 50px 50px 50px 50px;
+            grid-template-rows: auto;
+            grid-template-areas: 
+                "header header header header"
+                "main main . sidebar"
+                "footer footer footer footer"
+        }
+        
+        section {
+            border: 1px solid; 
+        }
+        
+        .item-a { grid-area: header; }
+        .item-b { grid-area: main; }
+        .item-c { grid-area: sidebar; }
+        .item-d { grid-area: footer;}
+        
+        footer {
+            width: 150px;
+            background-color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+<body>
+    <header>GRID CSS</header>
+    <article>
+        <section class="item-a">
+            Sección 1.
+        </section>
+        <section class="item-b">
+            Sección 2.
+        </section>
+        <section class="item-c">
+            Sección 3.
+        </section>
+        <section class="item-d">
+            Sección 4.
+        </section>
+    </article>
+    <footer>Pie de página: 150px</footer>
+</body>
+</html>

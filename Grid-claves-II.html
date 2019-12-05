@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID CSS</title>
+    <style>
+        .auto-fill div {
+            background-color: goldenrod;
+        }
+        
+        .auto-fit div {
+            background-color: purple;
+            color: white;
+        }
+        
+        .auto-fit {
+            display: grid;
+            grid-gap: 5px;
+            height: 120px;
+            margin: 20px 0;
+            
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        }
+        
+        .auto-fill {
+            display: grid;
+            grid-gap: 5px;
+            height: 120px;
+            margin: 20px 0;
+            
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        }
+    </style>
+</head>
+<body>
+<section class="auto-fill">
+    <div>Columna 1</div>
+    <div>Columna 2</div>
+    <div>Columna 3</div>
+    <div>Columna 4</div>
+</section>
+    
+<section class="auto-fit">
+    <div>Columna 1</div>
+    <div>Columna 2</div>
+    <div>Columna 3</div>
+    <div>Columna 4</div>
+</section>
+</body>
+</html>
