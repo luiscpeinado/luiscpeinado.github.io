@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animaciones</title>
+
+    <style>
+        @keyframes rotacion {
+          0% { transform: rotate3d(1, 0, 0, 5deg); }
+          100% { transform: rotate3d(1, 1, 0, 220deg); }
+        }
+
+        div {
+          width: 200px;
+          height: 200px;
+          background: #26A;
+          color: #FFF;
+          width: 100px;
+          animation: rotacion 2s ease-in-out 0s infinite alternate none running;
+        }
+</style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

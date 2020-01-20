@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animaciones</title>
+
+<style>
+    .contenedor {
+      width: 340px;
+      height: 250px;
+      margin: 0 auto;
+      border: 1px solid #d9d9d9;
+      position: relative;
+    }
+    .contenedor p {
+      text-align: center;
+      font-size: 16px;
+      margin-top: 37px;
+    }
+    .transform {
+      width: 100px;
+      height: 100px;
+      border: 1px solid #d9d9d9;
+      background-image: url(images/transformCSS.png);
+      position: absolute;
+    }
+    [class^=rotate] {
+      top: 75px;
+      left: 120px;
+    }
+    
+    @keyframes rotar {
+        0% { transform:  rotate(0deg); }
+        100% { transform:  rotate(45deg); }
+    }
+    
+    .rotate {
+      animation: rotar 2s ease 0s infinite;;
+    }
+    
+    [class^=skew] {
+      top: 15px;
+      left: 60px;
+    }
+    
+    @keyframes deforma {
+        0% { transform:  skew(0deg, 0deg) }
+        100% { transform:  skew(15deg, 15deg); }
+    }
+    .skew {
+         animation: deforma 2s ease 0s infinite;
+    }
+
+    @keyframes deformaX {
+        0% { transform: skewX(0deg); }
+        100% { transform: skewX(15deg); }
+    }
+    .skewX {
+        left: 200px;
+        animation: deformaX 2s ease 0s infinite;
+    }
+    
+    @keyframes deformaY {
+        0% { transform:  skewY(0deg) }
+        100% { transform:  skewY(15deg); }
+    }
+    .skewY {
+        top: 135px;
+        animation: deformaY 2s ease 0s infinite;
+    }
+    
+    [class^=scale] {
+        top: 15px;
+        left: 120px;
+    }
+    
+    @keyframes escala {
+        0% { transform: scale(0,0);}
+        100% { transform: scale(1, .5);}
+    }
+    .scale {
+        animation: escala 2s ease 0s infinite;
+    }
+    
+    @keyframes escalaX {
+        0% { transform: scaleX(0); }
+        100% { transform: scaleX(2); }
+    }
+    
+    .scaleX {
+        top: 135px;
+        animation: escalaX 2s ease 0s infinite;
+    }
+    
+    [class^=translate] {
+        top: 25px;
+        left: 20px
+    }
+    
+    @keyframes mueve {
+        0% { transform: translate(0px, 0px); }
+        100% { transform: translate(100px, 100px); }
+    }
+    .translate {
+        animation: mueve 2s ease 0s infinite;
+    }
+    
+    @keyframes mueveX {
+        0% { transform: translateX(0px); }
+        100% { transform: translateX(200px); }
+    }
+    .translateX {
+        animation: mueveX 2s ease 0s infinite;
+    }
+</style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="rotate-testigo transform"></div>
+        <div class="rotate transform"><p>rotate</p></div>
+    </div>
+    
+    <div class="contenedor">
+        <div class="skew-testigo transform"></div>
+        <div class="skew transform"><p>skew</p></div>
+        <div class="skewX transform"><p>skewX</p></div>
+        <div class="skewY transform"><p>skewY</p></div>
+    </div>
+    
+    <div class="contenedor">
+        <div class="scale transform"><p>scale</p></div>
+        <div class="scaleX transform"><p>scaleX(2)</p></div>
+    </div>
+    
+    <div class="contenedor">
+        <div class="translate-testigo transform"></div>
+        <div class="translate transform"><p>translate</p></div>
+        <div class="translateX transform"><p>translateX</p></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animaciones</title>
+
+    <style>
+        @keyframes changeColor {
+          0% {
+            background: red;         /* Primer fotograma */
+          }
+          50% {
+            background: yellow;      /* Segundo fotograma */
+            width: 400px;
+          }
+          100% {
+            background: green;       /* Último fotograma */
+          }
+        }
+
+        div {
+          background: grey;
+          color: #FFF;
+          width: 150px;
+          height: 150px;
+          animation: changeColor 2s ease 0s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
