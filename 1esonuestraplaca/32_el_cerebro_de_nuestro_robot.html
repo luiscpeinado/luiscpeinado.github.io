@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>3.2. El cerebro de nuestro robot | Nuestra placa robótica se comunica con el mundo </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Varios" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-128"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Nuestra placa robótica se comunica con el mundo</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Nuestra placa robótica se comunica con el mundo</a></li>
+   <li><a href="1_qu_vamos_a_hacer.html" class="no-ch">1. ¿Qué vamos a hacer?</a></li>
+   <li><a href="2_activamos_nuestros_circuitos.html" class="no-ch">2. Activamos nuestros circuitos</a></li>
+   <li class="current-page-parent"><a href="3_nuestra_placa_robtica.html" class="current-page-parent daddy">3. Nuestra placa robótica</a>
+   <ul>
+      <li><a href="31_exploramos_la_placa.html" class="no-ch">3.1. Exploramos la placa</a></li>
+      <li id="active"><a href="32_el_cerebro_de_nuestro_robot.html" class="active daddy">3.2. El cerebro de nuestro robot</a>
+      <ul>
+         <li><a href="321_qu_has_aprendido_sobre_los_microcontroladores.html" class="no-ch">3.2.1. Qué has aprendido sobre los microcontroladores</a></li>
+      </ul>
+      </li>
+      <li><a href="33_entradas_procesamiento_y_salidas.html" class="no-ch">3.3. Entradas, procesamiento y salidas</a></li>
+   </ul>
+   </li>
+   <li><a href="4_el_entorno_de_programacin.html" class="daddy">4. El entorno de programación</a>
+   <ul class="other-section">
+      <li><a href="41_hola_mundo.html" class="no-ch">4.1. ¡Hola mundo!</a></li>
+   </ul>
+   </li>
+   <li><a href="5_nos_ponemos_manos_a_la_obra.html" class="no-ch">5. Nos ponemos manos a la obra</a></li>
+   <li><a href="6_presentamos_nuestro_trabajo.html" class="no-ch">6. Presentamos nuestro trabajo</a></li>
+   <li><a href="7_sacamos_conclusiones.html" class="no-ch">7. Sacamos conclusiones</a></li>
+   <li><a href="crditos.html" class="no-ch">Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="31_exploramos_la_placa.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>6</strong> de <strong>14</strong></span> <span class="sep">| </span><a href="321_qu_has_aprendido_sobre_los_microcontroladores.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">3.2. El cerebro de nuestro robot</h1></header>
+<article class="iDevice_wrapper UDLcontentIdevice" id="id604">
+<div class="iDevice emphasis0" >
+<div id="ta604_817_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Diccionario</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="exe-fx exe-accordion">
+<h2>Silicio</h2>
+<p><img src="Silicio.png" alt="Imagen que muestra el Silicio en la tabla periódica" title="Silicio" style="float: left; margin-right: 10px; margin-left: 10px;" width="150" height="150"></p>
+<dl style="overflow: hidden;">
+<dt><strong>Definición</strong></dt>
+<dd>
+<p>Es un material muy abundante que puede comportarse como un conductor o aislante de la corriente eléctrica. Se utiliza en la industria electrónica y microelectrónica, para fabricar componentes.</p>
+</dd>
+<dt><strong>Ejemplo</strong></dt>
+<dd>
+<p>La mayoría de los componentes electrónicos están hechos de silicio.</p>
+</dd>
+</dl>
+<h2>RAM</h2>
+<p><img src="RAM.png" alt="Imagen que muestras tarjetas con memorias RAM para ordenador" title="RAM" style="float: left; margin-right: 10px; margin-left: 10px;" width="125" height="125"></p>
+<dl style="overflow: hidden;">
+<dt><strong>Definición</strong></dt>
+<dd>
+<p>RAM acrónimo de Random Access Memory o Memoria de Acceso Aleatorio. Es la memoria principal de un dispositivo, es donde se almacenan de forma temporal los datos de los programas que se están utilizando en ese momento.</p>
+</dd>
+<dt><strong>Ejemplo</strong></dt>
+<dd>
+<p>La memoria RAM almacena la información de los sensores.</p>
+</dd>
+</dl>
+</div></div></div></section></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice" id="id468">
+<div class="iDevice emphasis0" >
+<div id="ta468_467_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><img src="gif_animado_narrador_juvenil.gif" alt="Retor dice" style="float: left;" width="250" height="250">En este apartado vamos a aprender cómo es y cómo funciona el <strong>cerebro</strong> de <strong>nuestra</strong> <strong>placa</strong> robótica.</p>
+<p>Seguro que mucha de la información que vas a ver a continuación será nueva para ti, por lo que puede ser normal que a veces no entiendas algo. Si esto pasa, no te desanimes y pregúntale al profesor o a la profesora. También puedes ir apuntando en tu cuaderno algunas de las ideas importantes que vayas trabajando para que no se te olviden. No hace falta escribirlo todo, solo lo más importante.</p>
+<p>¡Ánimo! ¡Merecerá la pena!</p></div></div></section></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_rep_reflexion" id="id470">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_reflexion.svg)"><h1 class="iDeviceTitle">1. ¿Qué tienen en común estos aparatos?</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta470_469_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>En pareja revisa las siguientes imágenes y piensa que dispositivo tecnológico tienen en común todos estos aparatos.</p>
+<div class="exe-fx exe-paginated">
+<h2>Robot</h2>
+<p style="text-align: center;"><img src="Robot-wall-e.jpg" alt="Robot wall-e de juguete" title="Robot wall-e" width="400" height="267"></p>
+<h2>Radio</h2>
+<p style="text-align: center;"><img src="radio.jpg" alt="Radio digital" title="Radio" width="400" height="400"></p>
+<h2>Ratón</h2>
+<p style="text-align: center;"><img src="raton.jpg" alt="Ratón de ordenador" title="Ratón de ordenador" width="400" height="267"></p>
+<h2>Microondas</h2>
+<p style="text-align: center;"><img src="microondas.jpg" alt="Microondas" title="Microondas" width="400" height="239"></p>
+<h2>Reloj</h2>
+<p style="text-align: center;"><img src="reloj.jpg" alt="Reloj digital" title="Reloj digital" width="399" height="314"></p>
+<h2>Aspiradora</h2>
+<p style="text-align: center;"><img src="aspiradora.jpg" alt="Aspiradora robotica" title="Aspiradora robotica" width="400" height="267"></p>
+<h2>Mandos de videojuego</h2>
+<p style="text-align: center;"><img src="Mando_videojuego.jpg" alt="Mando de videojuego" title="Mando de videojuego" width="400" height="267"></p>
+<h2>Impresora 3D</h2>
+<p style="text-align: center;"><img src="Impresora_3D.jpg" alt="Impresora 3D" title="Impresora 3D" width="400" height="265"></p>
+</div></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2><span class="sr-av">Lumen dice </span>¿Necesitas una pista?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><img src="microControladorIcono.png" title="Icono del Microcontrolador" style="margin: 10px auto; display: block;" width="125" height="125"></p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>¿Quieres saber qué tienen en común?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Todos estos aparatos tienen en común que incorporan un microcontrolador como "cerebro".</p>
+<p>El microcontrolador controla las funciones que realiza el aparato. Hoy en día la gran mayoría de aparatos que nos rodean funcionan con un microcontrolador. Nuestra placa robótica también tiene "un cerebro", un microcontrolador. Ya lo identificamos en el ejercicio anterior.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_manipula" id="id486">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_manipula.svg)"><h1 class="iDeviceTitle">2. Identifica el microcontrolador</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta486_486_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Coge nuestra placa robótica e intenta identificar cuál es el microcontrolador.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2><span class="sr-av">Lumen dice </span>¿Necesitas ayuda para identificar el microcontrolador?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: center;"><img src="Micro_microbit.jpg" alt="Microcontrolador de la Micro:bit localizado con una lupa" title="Micro Micro:bit" width="560" height="312"></p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_rep_lee" id="id473">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_lee.svg)"><h1 class="iDeviceTitle">3. Qué es un microcontrolador</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta473_472_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="exe-fx exe-tabs">
+<h2>Qué son</h2>
+<p>Como hemos visto, un <strong>microcontrolador</strong> es el <strong>cerebro</strong> de la mayoría de los <strong>aparatos</strong> y robots que nos rodean.</p>
+<p>Un microcontrolador es un circuito integrado que consta de un microprocesador rodeado de las memorias de programa, <a href="#tb081283b-fef6-9ae0-e323-b601b9ca381f" id="linkb081283b-fef6-9ae0-e323-b601b9ca381f" class="exe-tooltip definition-tt titled-tt" title="RAM | Acceder a la definición del término RAM">RAM</a>, circuitos de entrada y salida para comunicarse y/o controlar periféricos.</p>
+<figure class="exe-figure exe-image position-center" style="width: 501px;"><img src="MicrocontroladorComponentes.jpg" title="Componentes Microcontrolador" alt="El Microcontrolador incluye en su interior: microprocesador, memoria de programa, memoria RAM, convertidor analógico digital, reloj, y dispositivos para controlar entradas/ salidas" width="395" height="250"></figure>
+<p>Un <strong>microprocesador</strong> es un circuito integrado <strong>programable</strong> capaz de ejecutar las instrucciones del programa grabado en su memoria.</p>
+<p>Un circuito integrado es un chip (pastilla) de <a href="#t5cef20a1-b64e-e217-ef1f-8bc5af4b1cd4" id="link5cef20a1-b64e-e217-ef1f-8bc5af4b1cd4" class="exe-tooltip definition-tt titled-tt" title="Silicio | Acceder a la definición del término silicio"><strong>silicio</strong></a> que contiene millones de circuitos en su interior.</p>
+<div class="exe-layout-2-cols exe-layout-2-50-50 exe-clear">
+<div class="exe-col exe-col-1">
+<p><img src="Microcontrolador_interior.jpg" alt="Microcontrolador fotografía con microspodio electrónico de los circuitos que contiene en su interior" title="Microcontrolador interior" style="display: block; margin-left: auto; margin-right: auto;" width="344" height="300"></p>
+</div>
+<div class="exe-col exe-col-2">
+<p><img src="Microcontrolador_exterior.jpg" alt="Microcontrolador fotografía del aspecto exterior y vista del chio" title="Microcontrolador aspecto exterior" style="display: block; margin-left: auto; margin-right: auto;" width="448" height="300"></p>
+</div>
+</div>
+<div class="exe-layout-2-cols exe-layout-2-50-50 exe-clear">
+<div class="exe-col exe-col-1"></div>
+<div class="exe-col exe-col-2"></div>
+</div>
+<h2>Cómo funcionan</h2>
+<p>Los circuitos que contienen son capaces de realizar operaciones a gran velocidad.</p>
+<p>Un ejemplo de las <strong>operaciones</strong> que realizan son: cálculos matemáticos (sumar, restar, multiplicar), comparar datos, leer las entradas, activar salidas…</p>
+<p>Los microprocesadores son capaces de realizar <strong>millones</strong> de <strong>operaciones</strong> por <strong>segundo</strong>. El que lleva nuestra placa robótica puede realizar 16 millones de tareas por segundo.</p>
+<p>Las <strong>tareas</strong> que realiza el microcontrolador las escribimos mediante un <strong>programa</strong>, que se convierte a formato binario para cargarse en el microcontrolador.</p>
+<p>Un archivo binario está formado por unos y por ceros que es el lenguaje que entienden el microcontrolador que es un sistema digital.</p>
+<p>En nuestro caso escribimos las órdenes en nuestro entorno de programación, mediante bloques, al guardarlo lo convertimos a un archivo codificado en binario .hex (que contiene las instrucciones de programación en el lenguaje del microcontrolador) que cargamos en la placa.</p>
+<p style="text-align: center;"><img src="ProcesoCargaPrograma.png" title="Proceso progrmación placa" alt="Proceso de carga del programa en la placa: Se realiza el programa, lo convertimos a un archivo binario de tipo .hex, y cargamos el archivo en la placa" width="800" height="243"></p>
+<h2>Ventajas</h2>
+<p>Resumiendo, las ventajas que aportan los microcontroladores son:</p>
+<ul>
+<li><strong>Fácilmente programables</strong> con lenguajes de programación de alto nivel. Un lenguaje de programación de alto nivel, es similar al lenguaje humano, por lo que es “fácilmente” comprensible.</li>
+<li>Muy <strong>flexibles</strong>: es decir, sirven casi para cualquier propósito: así podemos encontrarlo en una radio, un reloj, un microondas, frigorífico, un teclado...</li>
+<li><strong>Pequeños</strong>: por lo que pueden ir integrados en todo tipo de aparatos desde una tarjeta de crédito a naves espaciales...</li>
+<li>Muy <strong>económicos</strong>: los más sencillos podemos encontrarlos por céntimos de euro.</li>
+<li><strong>Rápidos</strong>: pueden realizar millones de tareas por segundo.</li>
+</ul>
+<h2>Vídeo</h2>
+<p style="text-align: center;"><iframe width="560" height="314" src="https://www.youtube.com/embed/Y9tk07CzTAA?rel=0&amp;hl=es&amp;cc_lang_pref=es&amp;cc_load_policy=1" allowfullscreen="allowfullscreen"></iframe><br><br><br></p>
+</div>
+<div id="t5cef20a1-b64e-e217-ef1f-8bc5af4b1cd4" class="exe-tooltip-text">
+<p><strong><img src="Silicio.png" alt="Imagen que muestra el Silicio en la tabla periódica" title="Silicio" style="float: left; margin-right: 10px; margin-left: 10px;" width="100" height="100">Definición</strong>:</p>
+<p>Es un material muy abundante que puede comportarse como un conductor o aislante de la corriente eléctrica. Se utiliza en la industria electrónica y microelectrónica, para fabricar componentes.</p>
+<p><strong>Ejemplo</strong>:</p>
+<p>La mayoría de los componentes electrónicos están hechos de silicio.</p>
+</div>
+<div id="tb081283b-fef6-9ae0-e323-b601b9ca381f" class="exe-tooltip-text">
+<p><strong><img src="RAM.png" alt="Imagen que muestras tarjetas con memorias RAM para ordenador" title="RAM" style="float: left; margin-right: 10px; margin-left: 10px;" width="100" height="100">Definición</strong>:</p>
+<p>RAM acrónimo de Random Access Memory o Memoria de Acceso Aleatorio. Es la memoria principal de un dispositivo, es donde se almacenan de forma temporal los datos de los programas que se están utilizando en ese momento.</p>
+<p><strong>Ejemplo</strong>:</p>
+<p>La memoria RAM almacena la información de los sensores.</p>
+</div></div><article class="exe-udlContent-content-simplified js-hidden"><header class='exe-udlContent-alt-content-title'><h2>Lectura facilitada</h2></header><p>¿Qué es un microcontrolador?</p>
+<p>Un microcontrolador es una pequeña pieza que sirve para controlar los aparatos y robots.</p>
+<p>Así es por dentro:</p>
+<figure class="exe-figure exe-image position-center" style="text-align: center;"><img src="https://live.staticflickr.com/4005/4524766345_a14384bdfa_b.jpg" style="vertical-align: baseline;" width="267" height="200"></figure>
+<p>Así es por fuera:</p>
+<figure class="exe-figure exe-image position-center" style="text-align: center;"><img src="https://live.staticflickr.com/4025/4525376960_dd89087335_b.jpg" width="341" height="255"></figure>
+<p>El microcontrolador es un circuito que tiene las siguientes partes:</p>
+<ul>
+<li>Microprocesador rodeado de las memorias de programa.</li>
+<li><a href="#tcbb5ee53-d639-dcf8-5491-6f720e6cf80f" id="linkcbb5ee53-d639-dcf8-5491-6f720e6cf80f" class="exe-tooltip definition-tt titled-tt" title="RAM | Acceder a la definición de RAM"><strong>RAM</strong></a>.</li>
+<li><strong>Circuitos de <a href="#te00f46ae-c6a2-e977-4a32-385649265a74" id="linke00f46ae-c6a2-e977-4a32-385649265a74" class="exe-tooltip definition-tt titled-tt" title="Entrada | Acceder a la definición de entrada">entrada</a> y <a href="#t447ae074-a7c3-cfaf-ccec-53d580793663" id="link447ae074-a7c3-cfaf-ccec-53d580793663" class="exe-tooltip definition-tt titled-tt" title="Salida | Acceder a la definición de salida">salida</a></strong> para comunicarse y poder controlar otros aparatos conectados.</li>
+</ul>
+<figure class="exe-figure exe-image position-center" style="text-align: center; width: 501px;"><img src="MicrocontroladorComponentes.jpg" title="El Microcontrolador incluye en su interior: microprocesador, memoria de programa, memoria RAM, convertidor analógico digital, reloj, y dispositivos para controlar entradas/ salidas" width="395" height="250"></figure>
+<p>Un microprocesador es un circuito integrado. </p>
+<p>Un circuito integrado es un chip que tiene muchos circuitos en su interior.  </p>
+<p>Este chip está hecho de silicio. </p>
+<p>Se puede <a href="#td600b74c-2be3-3c06-eeeb-7f057f65fccd" id="linkd600b74c-2be3-3c06-eeeb-7f057f65fccd" class="exe-tooltip definition-tt titled-tt" title="Programar | Acceso a la definición del termino programar">programar</a> para que haga lo que le pedimos muy rápido.</p>
+<p>El microprocesador realiza muchas tareas, como las siguientes:</p>
+<ul>
+<li>Cálculos, como sumar, restar o multiplicar.</li>
+<li>Comparar números y ver si son iguales, mayores o menores.</li>
+<li>Recibir la información que le llega. Por ejemplo, puede llegarle información de si hace mucho calor o mucho frío.</li>
+<li>Activar otras piezas, como encender una luz.</li>
+</ul>
+<p>Los microcontroladores hacen millones de tareas por segundo.</p>
+<p>Por eso, le podemos pedir que realice ciertas tareas muy rápido.</p>
+<p>Las tareas que realiza se las escribimos con un programa en el <a href="#t49ce9fc7-04d8-b2fa-3981-e89c34257a1f" id="link49ce9fc7-04d8-b2fa-3981-e89c34257a1f" class="exe-tooltip definition-tt titled-tt" title="Entorno de programación | Acceso a la definición del termino Entorno de programación">entorno de programación</a>. </p>
+<p>Esas tareas se cargan en un formato binario. </p>
+<p>El formato binario es el lenguaje que comprende el microcontrolador y tiene ceros y unos. Por ejemplo: 001.</p>
+<figure class="exe-figure exe-image position-center" style="text-align: center;"><img src="Proceso_de_carga_programa_placa.png" title="Se realiza el programa, lo convertimos a un archivo binario de tipo .hex, y cargamos el archivo en la placa" width="402" height="121"></figure>
+<p>¿Cuáles son las ventajas de los microcontroladores? </p>
+<p>Lo bueno de los microcontroladores es que: </p>
+<ul>
+<li>Se programan muy fácil.</li>
+<li>Sirven para muchas cosas. </li>
+<li>Son pequeños. </li>
+<li>Son baratos.</li>
+<li>Son rápidos.</li>
+</ul>
+<div id="tcbb5ee53-d639-dcf8-5491-6f720e6cf80f" class="exe-tooltip-text">
+<p><strong><img src="RAM.png" alt="Imagen que muestras tarjetas con memorias RAM para ordenador" title="RAM" style="float: left; margin-right: 10px; margin-left: 10px;" width="125" height="125">Definición</strong>:</p>
+<p>Es la memoria principal de un dispositivo.</p>
+<p><strong>Ejemplo</strong>:</p>
+<p>La memoria RAM almacena la información de los sensores.</p>
+</div>
+<div id="te00f46ae-c6a2-e977-4a32-385649265a74" class="exe-tooltip-text">
+<p><strong><img src="teclado.png" alt="Imagen que muestra un teclado" title="Entrada" style="float: left; margin-right: 10px; margin-left: 10px;" width="125" height="125">Definición</strong>:</p>
+<p>Elemento que lleva información a un sistema informático.</p>
+<p><strong>Ejemplo</strong>:</p>
+<p>El ratón y el teclado son entradas de un ordenador.</p>
+</div>
+<div id="t447ae074-a7c3-cfaf-ccec-53d580793663" class="exe-tooltip-text">
+<p><strong><img src="pantalla_LCD.png" alt="Imagen que muestra la pantalla de un ordenador" title="Salida" style="float: left; margin-right: 10px; margin-left: 10px;" width="125" height="125">Definición</strong>:</p>
+<p>Elemento que muestra la información en un sistema informático.</p>
+<p><strong>Ejemplo</strong>:</p>
+<p>La pantalla es un componente de salida en un ordenador.</p>
+</div>
+<div id="t49ce9fc7-04d8-b2fa-3981-e89c34257a1f" class="exe-tooltip-text">
+<p><img src="EntornoProgramacion-def.png" alt="Imagen que muestra el entorno de programación online de Scratch" title="Entorno de programación" style="float: left; margin-right: 10px; margin-left: 10px;" width="125" height="125"><strong>Definición</strong>:</p>
+<p>Es un programa que permite escribir código y transformarlo en una aplicación informática.</p>
+<p><strong>Ejemplo</strong>:</p>
+<p>Python es un entorno de programación.</p>
+</div>
+<div id="td600b74c-2be3-3c06-eeeb-7f057f65fccd" class="exe-tooltip-text">
+<p><strong><img src="Programar-def.png" alt="Imagen que muestra un programa" title="Programar" style="float: left; margin-right: 10px; margin-left: 10px;" width="125" height="125">Definición</strong>:</p>
+<p>Dar instrucciones a una máquina o aparato para que realice funciones.</p>
+<p><strong>Ejemplo</strong>:</p>
+<p>Vamos a programar el robot.</p>
+</div><button class="exe-udlContent-alt-content-hide">Cerrar</button></article></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-2"><h2><span class="sr-av">Kardia dice </span>¿Quieres saber más sobre los microcontroladores?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="exe-fx exe-accordion">
+<h2>¿Sabes la importancia de los microcontroladores en la sociedad actual?</h2>
+<p>Los microprocesadores y microcontroladores son el cerebro de las máquinas que nos rodean. Una de las principales razones de la evolución tecnológica de los últimos años se debe a la capacidad de hacerlos cada vez más pequeños. Esto implica que sean más rápidos y puedan contener más circuitos que realicen funciones más complejas.</p>
+<h2>¿Sabes cuál es el origen del término microprocesador?</h2>
+<p>Hasta los años 70 los procesadores (ordenadores) eran muy voluminosos, llegando a ocupar habitaciones enteras.</p>
+<p><img src="Colossus.jpg" alt="Ordenador Colossus que ocupaba una habitación" title="Ordenador Colossus" style="display: block; margin-left: auto; margin-right: auto;" width="400" height="267"></p>
+<p>La primera vez que se consiguió realizar un procesador completo integrado en un chip se le denominó “microprocesador”. Fue el Intel 4004 en 1971.</p>
+<figure style="text-align: center;"><img src="Intel_C4004_b.jpg" alt="Intel 4004 el primer microprocesador" title="Intel 4004" width="401" height="267"></figure>
+<p>El primer microprocesador contenía 2500 componentes en su interior, en la actualidad contienen más de 15 mil millones de componentes.</p>
+<p>Esta capacidad de incluir circuitos cada vez más pequeños es uno de los avances tecnológicos fundamentales de los últimos años.</p>
+<p>Mientras más pequeños son los circuitos, más rápidos son los microprocesadores (las señales tardan menos en viajar) y menos potencia consumen.</p>
+<h2>¿Sabes cuál es la diferencia entre un microprocesador y un microcontrolador?</h2>
+<p>Los ordenadores y teléfonos móviles llevan en su interior un microprocesador, estos son muy potentes pero necesitan otros elementos para poder funcionar, como son memorias, el reloj, convertidor analógico digital, entre otros.</p>
+<figure class="exe-figure exe-image" style="text-align: center;"><img src="MicrocontroladorComponentes.jpg" title="Microcontrolador componentes" alt="Microcontrolador incluye en su interior: microprocesador, memoria de programa, memoria RAM, convertidor analógico digital, reloj, y dispositivos para controlar entradas/ salidas" width="474" height="300"></figure>
+<p>Los microcontroladores, como el que lleva nuestra placa robótica, son menos potentes que los microprocesadores que lleva un teléfono o un ordenador, pero incorporan todos los elementos necesarios para funcionar de forma autónoma.</p>
+<p>Para que nos hagamos una idea un microprocesador moderno es capaz de realizar 3000 millones de tareas por segundo mientras que el microcontrolador de nuestra placa realiza 16 millones de tareas por segundo. Suficiente para los usos que vamos a darles.</p>
+<h2>¿Sabes que nuestra placa robótica es de código abierto? ¿sabes qué significa?</h2>
+<p>Micro:bit es de código abierto, o como se denomina cuando hablamos de un circuito: Open Source Hardware. Esto significa que los circuitos que llevan conectados a las entradas y salidas del microcontrolador están publicados y con licencia para estudiarlos, replicarlos o modificarlos.</p>
+<p>En <a href="https://github.com/microbit-foundation/microbit-reference-design" target="_blank" title="Accede al recurso Repositorio de Microbit" rel="noopener">este repositorio</a> podemos encontrar toda la información necesaria para poder estudiar, o replicar el proyecto.</p>
+<p>Si quieres saber más sobre el <a href="https://es.wikipedia.org/wiki/C%C3%B3digo_abierto" target="_blank" title="Accede al recurso Open Source" rel="noopener">origen del Open Source</a></p>
+<p>Reflexionamos:</p>
+<ul>
+<li>¿Qué otros proyectos Open Source conoces? ¿Conoces el proyecto RepRap?</li>
+<li>¿Qué ventajas crees que aportan a los usuarios los proyectos Open Source?</li>
+<li>¿Qué ventajas crees que aporta al proyecto que muchas personas puedan participar?</li>
+</ul>
+<h2>¿Sabes cómo se fabrican los circuitos integrados y cuál es su historia?</h2>
+<p style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6-tKOHICqrI?start=244" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0"></iframe></p>
+</div></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_rep_reflexion" id="id625">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_reflexion.svg)"><h1 class="iDeviceTitle">4. Te ayudo a planificar el siguiente ejercicio</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta625_625_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Para llegar a una meta, es conveniente que seas un<strong> buen o buena estratega.</strong> Es decir, tener <strong>estrategias, técnicas, “trucos”</strong> para llegar antes o de forma más fácil donde tú quieres.</p>
+<p>Ahora te voy a enseñar una estrategia, ¡Aprovéchala para alcanzar tu reto!</p>
+<p>¿Quieres que te enseñe "trucos" para <strong>realizar un esquema</strong>.&nbsp;</p>
+<p><a href="https://edea.juntadeandalucia.es/bancorecursos/file/e0b96995-385b-4137-9c98-12bbbfa7e7c8/1/Guia_aprender_a_aprender_secundaria.zip/organizo_mis_ideas.html" target="_blank" title="Accede a la guía para aprender a aprender donde te explicamos cómo organizar tus ideas" rel="noopener">Haz clic en este enlace</a> y los aprenderás.&nbsp;</p>
+<p>Tómate el tiempo que necesites para realizarlo y recuerda que siempre podemos preguntarle al docente o a algún compañero o compañera cuando no entiendas algo.</p>
+<p>¡Ánimo, que lo harás genial!</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_coproducciontxt" id="id475">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_coproducciontxt.svg)"><h1 class="iDeviceTitle">5. Completa el esquema</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta475_474_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>En pareja, a partir de la información suministrada en la lectura "4. Qué es un microcontrolador", completa el siguiente esquema, y comenta con tu compañero o compañera las conclusiones que se extraen de él.</p>
+<figure class="exe-figure exe-image position-center" style="text-align: center;"><img src="Esquema-microcontrolador.png" title="Esquema microcontrolador" alt="Que importancia tienen, qué ventajas presentan, como son, aspecto, tamaño, que tienen en su interior, material. Cómo funcionan, qué operaciones realizan, velocidad, como le damos las órdenes" width="559" height="251"></figure></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-1"><h2><span class="sr-av">Motus dice </span>¿Te has dado cuenta de la cantidad de cosas que has tenido que hacer para completar la actividad?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Al realizar esta actividad has tenido que poner en juego todo lo que sabes. A veces para aprender tenemos que trabajar de forma constante. Cuando nos esforzamos mucho nuestro trabajo es valorado por nuestros profes y familiares. Pero lo más importante es que nos sentimos muy contentos por el trabajo realizado.</p>
+<p>Te animo a que sigas trabajando para que puedas aprender y seguir mejorando.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_debate" id="id471">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_debate.svg)"><h1 class="iDeviceTitle">6. Pero… ¿Qué conoces sobre los microcontroladores?</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta471_470_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><strong></strong>Al finalizar este apartado deberás ser capaz de contestar a las siguientes preguntas:</p>
+<ul>
+<li>¿Sabes por qué son tan importantes los microcontroladores en la sociedad actual?</li>
+<li>¿Cómo crees que se fabrican? ¿De qué material crees que está hecho?</li>
+<li>¿Sabes lo que ocurre en su interior? ¿Cómo funciona?</li>
+<li>¿Sabes cuál es el origen de la palabra microcontrolador?</li>
+<li>¿Sabes cuál es la diferencia entre un microcontrolador y un microprocesador?</li>
+<li>¿Cómo le doy las órdenes?</li>
+<li>¿Qué tamaño tienen?</li>
+<li>¿Cuánto cuestan?</li>
+<li>¿Cómo se han desarrollado a lo largo de la historia?</li>
+<li>¿Cuáles son sus ventajas respecto a otros sistemas?</li>
+<li>Nuestra placa es de código abierto, ¿Sabes que significa?</li>
+</ul></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-nc-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Reconocimiento No comercial Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="31_exploramos_la_placa.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>6</strong> de <strong>14</strong></span> <span class="sep">| </span><a href="321_qu_has_aprendido_sobre_los_microcontroladores.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_adultos_js.js"></script></body></html>
