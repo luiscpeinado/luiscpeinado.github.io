@@ -1,2 +1,2 @@
-# luiscpeinado.github.io
+# Repositorio para REAs
 Este repositorio lo utilizo para alojar algunos REAs de las asignaturas TIC y Computación y Robótica de Secundaria y Bachillerato.
