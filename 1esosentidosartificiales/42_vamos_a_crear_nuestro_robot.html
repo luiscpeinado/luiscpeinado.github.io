@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>4.2. Vamos a crear nuestro robot | Los sentidos artificiales </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jesús Barreto Pestana" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-125"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Los sentidos artificiales</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Los sentidos artificiales</a></li>
+   <li><a href="1_qu_vamos_a_hacer.html" class="no-ch">1. ¿Qué vamos a hacer?</a></li>
+   <li><a href="2_la_importancia_de_los_sensores.html" class="no-ch">2. La importancia de los sensores</a></li>
+   <li><a href="3_el_sentido_de_los_sensores.html" class="daddy">3. El sentido de los sensores</a>
+   <ul class="other-section">
+      <li><a href="31_seales_de_vida.html" class="no-ch">3.1. Señales de vida</a></li>
+      <li><a href="32_veamos_si_mi_robot_detecta_algo.html" class="no-ch">3.2. Veamos si mi robot detecta algo</a></li>
+      <li><a href="33_programamos_con_makecode.html" class="no-ch">3.3. Programamos con MakeCode</a></li>
+      <li><a href="34_cmo_prefieres_ver_lo_que_miden_los_sensores.html" class="no-ch">3.4. ¿Cómo prefieres ver lo que miden los sensores?</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="4_creamos_un_robot_con_mucho_sentido.html" class="current-page-parent daddy">4. ¿Creamos un robot con mucho sentido?</a>
+   <ul>
+      <li><a href="41_antes_de_crear_nuestro_robot_aplicamos_lo_visto.html" class="no-ch">4.1. Antes de crear nuestro robot, ¿aplicamos lo visto?</a></li>
+      <li id="active"><a href="42_vamos_a_crear_nuestro_robot.html" class="active no-ch">4.2. Vamos a crear nuestro robot</a></li>
+   </ul>
+   </li>
+   <li><a href="5_compartimos_nuestro_trabajo.html" class="no-ch">5. Compartimos nuestro trabajo</a></li>
+   <li><a href="6_sacamos_conclusiones.html" class="no-ch">6. Sacamos conclusiones</a></li>
+   <li><a href="crditos.html" class="no-ch">Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="41_antes_de_crear_nuestro_robot_aplicamos_lo_visto.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>11</strong> de <strong>14</strong></span> <span class="sep">| </span><a href="5_compartimos_nuestro_trabajo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">4.2. Vamos a crear nuestro robot</h1></header>
+<article class="iDevice_wrapper UDLcontentIdevice" id="id606">
+<div class="iDevice emphasis0" >
+<div id="ta606_819_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Diccionario</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="exe-fx exe-accordion">
+<h2>Algoritmo</h2>
+<p><img src="Diagrama_de_flujo.png" alt="Imagen que muestra el diagrama de flujo de un algoritmo" title="Algoritmo" style="float: left; margin-right: 10px; margin-left: 10px;" width="125" height="125"></p>
+<dl style="overflow: hidden;">
+<dt><strong>Definición:</strong></dt>
+<dd>
+<p>Un algoritmo es un conjunto de pasos para llegar a hacer algo.</p>
+</dd>
+<dt><strong>Ejemplo:</strong></dt>
+<dd>
+<p>Comprobar porque no enciende la luz lo podemos convertir en un algoritmo.</p>
+</dd>
+</dl>
+<h2>Diagrama de flujo</h2>
+<p><img src="Diagrama_de_flujo.png" alt="Imagen que muestra un diagrama de flujo" title="Diagrama de flujo" style="float: left; margin-right: 10px; margin-left: 10px;" width="125" height="125"></p>
+<dl style="overflow: hidden;">
+<dt><strong>Definición:</strong></dt>
+<dd>
+<p>Es la representación gráfica de un algoritmo o proceso.</p>
+</dd>
+<dt><strong>Ejemplo:</strong></dt>
+<dd>
+<p>El algoritmo para comprobar porque una luz no funciona se ha representado mediante un diagrama de flujo.</p>
+</dd>
+</dl>
+<h2>Interactivo</h2>
+<p><img src="pulsar.png" alt="Imagen que muestra un botón pulsandose" title="Interactivo" style="float: left; margin-right: 10px; margin-left: 10px;" width="125" height="125"></p>
+<dl style="overflow: hidden;">
+<dt><strong>Definición:</strong></dt>
+<dd>
+<p>Que permite la interacción entre usuarios y sistemas informáticos.</p>
+</dd>
+<dt><strong>Ejemplo:</strong></dt>
+<dd>
+<p>Nuestro robot es interactivo si reacciona ante estímulos externos como puede ser al pulsar un botón.</p>
+</dd>
+</dl>
+</div></div></div></section></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice" id="id516">
+<div class="iDevice emphasis0" >
+<div id="ta516_516_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><img src="retor_escolares_conbocadillo.gif" alt="Retor dice" style="float: left;" width="250" height="250" title="Retor"></p>
+<p>Por fin ha llegado el momento de <strong>crear</strong>&nbsp;nuestro <strong>robot </strong>o<strong> sistema robótico</strong>. Tendremos que poner en práctica todo lo aprendido.</p>
+<p>Vamos a&nbsp;trabajar en <strong>pareja-grupo</strong>&nbsp;las siguientes actividades, consulta a tu profesora o profesor cómo vais a formar los grupos.&nbsp;</p>
+<p>Tendremos que seguir&nbsp;una serie de&nbsp;pasos&nbsp;que os ayudarán en nuestro&nbsp;objetivo.&nbsp;¡Vamos, te enseño cómo podemos hacerlo!</p>
+<p>Así que… Debéis estar muy concentradas y concentrados.</p>
+<p>¡Seguro que lo harás muy bien! ¡Confía en ti!</p></div></div></section></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_actividad" id="id2341">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_actividad.svg)"><h1 class="iDeviceTitle">1. Elige un sensor para tu robot...¿de la placa o externo?</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta2341_790_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><img src="lightbulb-gd9e54bbd3_640.jpg" alt="Imagen que representa la creación de ideas, mediante una mano y una idea para cada dedo" title="Creación de ideas" width="300" height="200" style="float: left; margin-right: 10px; margin-left: 10px;">Empezamos el proceso de creación y toca elegir un&nbsp;<strong>sensor</strong>, que te guste y te parezca interesante, sobre el que se fundamentará tu <strong>robot</strong>.&nbsp;</p>
+<p>Recuerda todos los sensores que tienes disponibles en tu placa micro:bit y que también puedes conectar sensores externos.</p>
+<p>Puedes aprovechar alguno de los ejercicios o actividades vistos hasta ahora.</p>
+<p>Ten presente que el sensor que elijas será determinante en la creación de tu robot y debe servirte para explicar su similitud con los sentidos humanos.</p>
+<p>¡Tenemos que conseguir un robot que sea sencillo y que nos permita explicar su similitud con su equivalente sentido humano!</p>
+<p>Para ello en esta actividad, vamos a trabajar de forma individual.&nbsp;</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2><span class="sr-av">Lumen dice </span>¿Necesitas ayuda para elegir el sensor?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>A la hora de elegir los sensores de tu robot, puede servirte de ayuda el siguiente diagrama comparativo entre los sentidos humanos y los sensores:</p>
+<p><img src="diagrama_sentidos_y_sensores.png" alt="Imagen que describe un diagrama comparativo de los sentidos humanos y los sensores" title="Diagrama comparativo entre los sentidos humanos y los sensores" width="652" height="237" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>De esta forma, podrás establecer la relación de similitud entre los sensores elegidos y los sentidos humanos desde el principio.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_coproducciontxt" id="id518">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_coproducciontxt.svg)"><h1 class="iDeviceTitle">1.1. Si el sensor es de la placa</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta518_518_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>En tu cuaderno, ordenador o tableta <strong>escribe</strong>&nbsp;qué magnitud física o química quieres que detecte tu robot&nbsp;<a href="#tb53a3fc0-84b6-f91f-30c3-8e95018c8c09" id="linkb53a3fc0-84b6-f91f-30c3-8e95018c8c09" class="exe-tooltip definition-tt titled-tt" title="Interactivo | Acceder a la definición del término interactivo">interactivo</a><em>.<br></em></p>
+<p>Elige el sensor adecuado para realizar la medición del entorno.</p>
+<p>Puedes aprovechar alguno de los ejercicios o actividades vistos hasta ahora.</p>
+<div id="tb53a3fc0-84b6-f91f-30c3-8e95018c8c09" class="exe-tooltip-text">
+<p><strong><img src="pulsar.png" alt="Imagen que muestra un botón pulsandose" title="Interactivo" style="float: left; margin-right: 10px; margin-left: 10px;" width="100" height="100">Definición</strong>:</p>
+<p>Que permite la interacción entre usuarios y sistemas informáticos.</p>
+<p><strong>Ejemplo</strong>:</p>
+<p>Nuestro robot es interactivo si reacciona ante estímulos externos como puede ser al pulsar un botón.</p>
+</div></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2>¿Necesitas ayuda con los sensores?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Recuerda cuando vimos los sensores de la placa micro:bit en el apartado <a href="32_veamos_si_mi_robot_detecta_algo.html" title="Accede al apartado 4.2. Veamos si mi robot detecta algo">4.2. Veamos si mi robot detecta algo.</a></p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_coproducciontxt" id="id2344">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_coproducciontxt.svg)"><h1 class="iDeviceTitle">1.2. Si eliges un sensor externo a la placa</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta2344_113_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Si has elegido un sensor externo a nuestra placa micro:bit,&nbsp;elabora una lista de&nbsp;los componentes&nbsp;necesarios para conectarlo a tu robot.</p>
+<p>Prepara todos estos componentes para cuando tengas que montar tu robot.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2><span class="sr-av">Lumen dice </span>¿Necesitas ayuda con este ejercicio?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Si necesitas ayuda, recuerda cuando vimos los sensores externos de la placa micro:bit en el apartado <a href="32_veamos_si_mi_robot_detecta_algo.html" title="Accede al apartado 4.2. Veamos si mi robot detecta algo">4.2. Veamos si mi robot detecta algo</a>.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_coproducciontxt" id="id537">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_coproducciontxt.svg)"><h1 class="iDeviceTitle">2. ¿Similitud entre sensores y sentidos?</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta537_537_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><img src="future-g19c00dcc5_640.jpg" alt="Imagen que representa la similitud entre los robots y los seres humanos representada en el contacto entre sus brazos" title="Similitud entre los brazos de un robot y los seres humanos" width="251" height="168" style="float: left; margin-right: 10px; margin-left: 10px;">Una vez elegido el sensor, en esta actividad vamos a establecer la <strong>similitud</strong> que tiene el&nbsp;<strong>sensor</strong>&nbsp;de tu robot con los <strong>sentidos</strong> humanos.</p>
+<p>Recuerda que esta parte es muy importante para conseguir nuestro <strong>reto</strong>.</p>
+<p><strong>Elabora</strong> una tabla donde relaciones la <strong>similitud</strong> entre el funcionamiento de los <strong>sensores</strong> de tu robot y los <strong>sentidos</strong> humanos para las acciones que realiza.</p>
+<p>Puedes responder este ejercicio en tu cuaderno, ordenador o tableta, elige la opción con la que te sientas mejor.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2><span class="sr-av">Lumen dice </span>¿Necesitas ayuda con la tabla sensor/sentido?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Puedes elaborar una tabla similar a la usada en el punto 3 del apartado 2. Antes de empezar, activamos nuestros sentidos.</p>
+<p>Completa la siguiente tabla en tu cuaderno, ordenador o tableta para los sensores de tu robot.</p>
+<table border="1" style="height: 73px; width: 100%;" class="exe-table">
+<tbody>
+<tr>
+<td style="width: 25%; text-align: center;" colspan="4"><strong>Acción 1: ...</strong></td>
+</tr>
+<tr style="height: 37px;">
+<td style="width: 25%; height: 37px; text-align: justify;"></td>
+<td style="width: 25%; text-align: center; height: 37px;">Sentido/sensor (Entrada)</td>
+<td style="width: 25%; text-align: center; height: 37px;">Órgano Proceso</td>
+<td style="width: 25%; text-align: center; height: 37px;">Actuador(Salida)</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 25%; height: 18px;">Seres humanos</td>
+<td style="width: 25%; height: 18px;"></td>
+<td style="width: 25%; height: 18px;"></td>
+<td style="width: 25%; height: 18px;"></td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 25%; height: 18px;">Robot</td>
+<td style="width: 25%; height: 18px;"></td>
+<td style="width: 25%; height: 18px;"></td>
+<td style="width: 25%; height: 18px;"></td>
+</tr>
+<tr>
+<td style="width: 25%; text-align: center;" colspan="4"><strong>Acción 2: ...</strong></td>
+</tr>
+<tr>
+<td style="width: 25%;">Seres humanos</td>
+<td style="width: 25%;"></td>
+<td style="width: 25%;"></td>
+<td style="width: 25%;"></td>
+</tr>
+<tr>
+<td style="width: 25%;">Robot</td>
+<td style="width: 25%;"></td>
+<td style="width: 25%;"></td>
+<td style="width: 25%;"></td>
+</tr>
+</tbody>
+</table></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_actividad" id="id523">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_actividad.svg)"><h1 class="iDeviceTitle">3. ¡Cómo representar las lecturas del sensor!</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta523_523_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><img src="gif_animado_narrador_juvenil.gif" alt="" style="float: left;" width="125" height="125">En esta actividad se plantean una serie de ejercicios para profundizar en la representación<b><i>&nbsp;del sensor de tu robot</i></b>, cuando acabes uno, pasa al siguiente. ¡Ánimo, intenta resolver cuantos más mejor!</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_coproducciontxt" id="id2346">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_coproducciontxt.svg)"><h1 class="iDeviceTitle">3.1. Diseña la forma de representación del sensor</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta2346_1850_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Elige la forma de representación de las lecturas del sensor de tu robot.</p>
+<p>Recuerda las distintas posibilidades de representación <b>de los sensores que hemos visto </b>en los apartados anteriores.</p>
+<p style="text-align: justify;">Para <strong>hacer</strong> <strong>interesante</strong>&nbsp;el robot, que vamos a crear, es importante que tengas en cuenta la posibilidad que existan <strong>varias formas de representación</strong>.</p>
+<p style="text-align: justify;">Puedes responder este ejercicio en tu cuaderno, ordenador, creando una infografía, pictogramas, elige la opción con la que te sientas mejor.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2><span class="sr-av">Lumen dice </span>¿Necesitas ayuda con las formas de representación?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Recuerda cuando vimos las distintas formas de representación de los sensores, en el apartado <a href="34_cmo_prefieres_ver_lo_que_miden_los_sensores.html" title="Accede al apartado 4.4. ¿Cómo prefieres ver lo que miden?">4.4. ¿Cómo prefieres ver lo que miden?</a></p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-3"><h2><span class="sr-av">Clavis dice </span>Es mejor supervisar</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Cuando tengas que <strong>supervisar</strong> un trabajo que tienes que realizar es importante que estés muy atenta o atento para seguir todos los pasos mentales que ayuden.</p>
+<p>En este caso acuérdate de todas las <strong>condiciones</strong> que te pide la actividad y ve <strong>revisando</strong> lo que vas haciendo para saber si hay algo que sobra, que falta o que debes cambiar para que sea mejor.</p>
+<p>Cuando supervises cada parte presta atención a <strong>cómo</strong> y <strong>por qué</strong> elegiste ese elemento y no otro. Puedes hacerte una <strong>tabla</strong> que te ayude a tener claro este esquema de supervisión a golpe de vista.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_coproducciontxt" id="id535">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_coproducciontxt.svg)"><h1 class="iDeviceTitle">3.2. Elige los actuadores para tu robot</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta535_535_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Una vez elegida la forma de representación del sensor de tu robot, define en tu cuaderno, ordenador o tableta el actuador que deberá tener tu robot para este fin.</p>
+<p>Si necesitas algún actuador externo a nuestra placa micro:bit, elabora una lista y prepara los componentes necesarios para su montaje.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2><span class="sr-av">Lumen dice </span>¿Necesitas ayuda con los actuadores?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Recuerda cuando vimos los actuadores de la placa micro:bit y externos a ella, en el apartado <a href="34_cmo_prefieres_ver_lo_que_miden_los_sensores.html" title="Accede al apartado 4.4. ¿Cómo prefieres ver lo que miden?">4.4. ¿Cómo prefieres ver lo que miden?</a></p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_coproducciontxt" id="id2350">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_coproducciontxt.svg)"><h1 class="iDeviceTitle">3.3. ¿Cómo será tu robot?</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta2350_1478_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><img src="dibujar.png" alt="Imagen que representa la creación de un dibujo a mano alzada con un lápiz sobre un papel" title="Dibujar un boceto" width="150" height="150" style="float: left; margin-right: 10px; margin-left: 10px;">Una vez que hemos elegido los elementos principales para tu robot, diseña mediante el dibujo de <strong>bocetos</strong>&nbsp;cómo será una vez montado.&nbsp;Puedes realizar estos dibujos en tu cuaderno o en formato digital en el ordenador o tableta, elige una de estas opciones.</p>
+<p>Sobre todo es importante el boceto de los componentes necesarios.</p>
+<p>Debes centrarte en esta tarea y pensar muy bien dónde estarán ubicados cada uno de los elementos del robot para que su funcionamiento sea el adecuado en cada momento.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2><span class="sr-av">Lumen dice </span>¿Necesitas ayuda con el boceto?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Recuerda que el boceto puede ser un dibujo a mano alzada para dar una idea de cómo será nuestro robot.</p>
+<p>No te preocupes por su exactitud.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_actividad" id="id528">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_actividad.svg)"><h1 class="iDeviceTitle">4. ¿Cómo será su funcionamiento?</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta528_528_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><img src="gif_animado_narrador_juvenil.gif" alt="Retor dice" style="float: left;" width="125" height="125">En esta actividad vamos a diseñar el funcionamiento de nuestro robot para que reaccione al estímulo externo detectado por el sensor elegido. De esta forma podemos utilizarlo para comparar su funcionamiento con los sentidos humanos.</p>
+<p>¡Avanza en estos pasos a tu ritmo, pero no dejes nunca de querer superarte!</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_coproducciontxt" id="id538">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_coproducciontxt.svg)"><h1 class="iDeviceTitle">4.1. Diseña el funcionamiento del robot</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta538_538_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><img src="escribir.png" alt="Imagen que representa la escribir un texto" width="150" height="150" style="float: left; margin-right: 10px; margin-left: 10px;" title="Escribir un texto">Diseña el funcionamiento del robot.</p>
+<p>Piensa cómo quieres que funcione tu robot. Escríbelo en forma de guión.</p>
+<p>&nbsp;Veamos un posible ejemplo que te sirva como estrategia a la hora de diseñar el funcionamiento de tu robot:</p>
+<ol>
+<li>Al empezar, quiero que el robot: ...</li>
+<li>De forma continua: ......</li>
+<li>Esperar: ...</li>
+<li>Reaccione a estímulo externo:...</li>
+<li>...</li>
+<li>Finalizar: ...</li>
+</ol>
+<p>Puedes responder este ejercicio en tu cuaderno, ordenador o tableta, elige la opción con la que te sientas mejor.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_coproducciontxt" id="id525">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_coproducciontxt.svg)"><h1 class="iDeviceTitle">4.2.  Explica el funcionamiento del programa</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta525_525_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Explica cuál es el funcionamiento de tu robot, ¿cuál es la función de los sensores y de los actuadores?</p>
+<p>Puedes responder este ejercicio en tu cuaderno, ordenador o tableta, elige la opción con la que te sientas mejor.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-3"><h2><span class="sr-av">Clavis dice </span>¿Necesitas ayuda para explicar el funcionamiento?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Para ayudarte a <strong>entender</strong> el funcionamiento del robot puedes explicar su funcionamiento a una compañera o compañero y después, que ella o él te lo explique a ti. Cuando expliques el funcionamiento piensa en la <strong>funcionalidad</strong> que tiene el robot, para qué sirve y cuándo podrías usarlo en tu práctica diaria.&nbsp;</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_actividad" id="id533">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_actividad.svg)"><h1 class="iDeviceTitle">5. Diseñamos el programa</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta533_533_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><img src="laptop-g48964a424_640.jpg" alt="Imagen que representa una persona programando en un ordenador portátil" title="Programación en un ordenador" width="250" height="167" style="float: left; margin-right: 10px; margin-left: 10px;">Vamos a <strong>diseñar</strong> el <strong>programa</strong> para que el conjunto de tu robot: sensor-microcontrolador-actuador, funcione adecuadamente.</p>
+<p>Empezaremos por definir las distintas órdenes que definirán el comportamiento del robot y luego diseñaremos en un diagrama el <strong><a href="#t64903067-f30b-6078-0b9e-ead803654144" id="link64903067-f30b-6078-0b9e-ead803654144" class="exe-tooltip definition-tt titled-tt" title="Algoritmo | Accede a la definición de algoritmo">algoritmo</a></strong> del programa.</p>
+<div id="t64903067-f30b-6078-0b9e-ead803654144" class="exe-tooltip-text">
+<p><img src="Diagrama_de_flujo.png" alt="Imagen que muestra el diagrama de flujo de un algoritmo" title="Algoritmo" style="float: left; margin-right: 10px; margin-left: 10px;" width="125" height="125"></p>
+<p><strong>Definición:</strong></p>
+<p>Un algoritmo es un conjunto de pasos para llegar a hacer algo.</p>
+<p><strong>Ejemplo:</strong></p>
+<p>Comprobar porque no enciende la luz lo podemos convertir en un algoritmo.</p>
+</div></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2><span class="sr-av">Lumen dice </span>¿Necesitas ayuda para diseñar la programación de los sensores y actuadores?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Si necesitas ayuda para diseñar la programación de los sensores y actuadores asociados a la placa micro:bit, recuerda lo que hemos visto en el apartado&nbsp;<a href="33_programamos_con_makecode.html" title="Accede al apartado 4.3. Programamos con MakeCode">4.3. Programamos con MakeCode</a>.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_coproducciontxt" id="id541">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_coproducciontxt.svg)"><h1 class="iDeviceTitle">5.1. Escribe el programa de tu robot</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta541_541_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Con lo definido en las actividades anteriores escribe en <strong>qué quieres</strong> que consista el programa de tu robot.</p>
+<p>Haz una lista con las instrucciones que quieres que realice el programa de tu robot.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_coproducciontxt" id="id542">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_coproducciontxt.svg)"><h1 class="iDeviceTitle">5.2. Realiza un diagrama de flujo de tu programa</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta542_542_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Antes de empezar a programar sería conveniente que <strong>elabores</strong> un <strong><a href="#tcb756aa0-256c-384e-0c29-c119daff01e1" id="linkcb756aa0-256c-384e-0c29-c119daff01e1" class="exe-tooltip definition-tt titled-tt" title="Diagrama de flujo | Acceder a la definición del término diagrama de flujo">diagrama de flujo</a></strong> del algoritmo del <strong>programa</strong> que vas a realizar y que define el funcionamiento del robot.</p>
+<p>Puedes crear este diagrama en tu cuaderno, ordenador, creando una infografía, pictogramas, elige una de estas opciones.</p>
+<div id="tcb756aa0-256c-384e-0c29-c119daff01e1" class="exe-tooltip-text">
+<p><strong><img src="Diagrama_de_flujo.png" alt="Imagen que muestra un diagrama de flujo" title="Diagrama de flujo" style="float: left; margin-right: 10px; margin-left: 10px;" width="125" height="125">Definición</strong>:</p>
+<p>Es la representación gráfica de un algoritmo o proceso.</p>
+<p><strong>Ejemplo</strong>:</p>
+<p>El algoritmo para comprobar porque una luz no funciona se ha representado mediante un diagrama de flujo.</p>
+</div></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>¿Necesitas ayuda para hacer el diagrama?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Si necesitas ayuda para realizar el diagrama, accede a la <a href="https://edea.juntadeandalucia.es/bancorecursos/file/e0b96995-385b-4137-9c98-12bbbfa7e7c8/1/Guia_aprender_a_aprender_secundaria.zip/creo_un_diagrama.html" target="_blank" title="Accede al recurso Creo un diagrama de la Guía didáctica de la competencia aprender a aprender" rel="noopener">Guía didáctica de la competencia aprender a aprender</a>.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_debate" id="id2354">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_debate.svg)"><h1 class="iDeviceTitle">6. Antes de seguir, reflexionamos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta2354_771_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><img src="thought-g61b5e80aa_640.jpg" alt="Imagen que representa una persona reflexionando" title="Persona reflexionando" width="180" height="166" style="float: left; margin-right: 10px; margin-left: 10px;">Una vez completada la fase de <strong>diseño</strong> y antes de pasar a la fase de <strong>creación</strong> del robot, leed y repasad en grupo cada una de las anotaciones realizadas hasta ahora en los cinco primeros pasos.</p>
+<p>Si detectáis algún <strong>error</strong> o queréis <strong>cambiar</strong> <strong>algo</strong>, es justo el momento.</p>
+<p>Esta comprobación es importante para ahorrar tiempo y realizar posibles cambios antes de la creación.&nbsp;</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_manipula" id="id2358">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_manipula.svg)"><h1 class="iDeviceTitle">7. Vamos a montar nuestro robot...</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta2358_1476_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><img src="hardware-ga6ebe72be_640.jpg" alt="Imagen que representa una serie de componentes electrónicos y cables para su montaje" title="Componentes electrónicos y cables" width="250" height="175" style="float: left; margin-right: 10px; margin-left: 10px;">En este ejercicio vamos a <strong>realizar</strong> el montaje de nuestro robot.</p>
+<p>Aprovecha los bocetos que tienes elaborados en los pasos anteriores.</p>
+<p>Recuerda las <em>medidas de seguridad</em>&nbsp;que vimos en el punto 9 del apartado <a href="31_seales_de_vida.html" title="Accede al apartado 4.1. Señales de vida">4.1. Señales de vida</a>.</p>
+<p>Es importante ir <strong>paso</strong> <strong>a</strong> <strong>paso</strong> de forma ordenada, siguiendo las conexiones de los bocetos iniciales.</p>
+<ol>
+<li>Para empezar, puedes partir del elemento principal de tu robot, su unidad de procesamiento, nuestra <strong>placa</strong> micro:bit.</li>
+<li><strong>Conecta</strong> los posibles componentes externos a la placa micro:bit; sensores o actuadores.</li>
+<li><strong style="font-size: 1.05em;">Comprueba</strong>&nbsp;todas las conexiones del robot.</li>
+<li><strong>Conecta</strong> la placa del robot a tu ordenador.</li>
+</ol>
+<p><span style="font-size: 1.05em;">Una vez que consigas montar tu robot, en el siguiente paso&nbsp;</span><strong style="font-size: 1.05em;">crearemos su programación.</strong></p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-3"><h2><span class="sr-av">Clavis dice </span>Te ayudo a organizarte</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>En ejercicios de este tipo hay que <strong>intentar ser práctico</strong> porque pueden ser muy complejos si sabes muchas cosas.&nbsp;Por ello, es recomendable que antes responder&nbsp;<strong>pienses en aspectos</strong> <strong>como</strong> los siguientes:</p>
+<p>¿Sabes <strong>lo que se pide</strong>?<br>¿Te acuerdas de <strong>lo que debes hacer</strong> en estos casos?<br>¿Se te da bien <strong>organizar</strong>?<br>¿Te gusta hacer las cosas&nbsp;<strong>de forma detallada</strong>?<br>¿Puedes acordarte de algún otro <strong>ejercicio parecido</strong> que hayas hecho?<br>¿Hay <strong>algo</strong> que ya hayas usado para un ejercicio <strong>parecido</strong>?<br>¿Se te da <strong>bien programar</strong>?<br><strong>Pensar</strong> sobre lo que sabes hacer y <strong>comentarlo a las compañeras y compañeros</strong> <strong>facilita</strong> poner en marcha las <strong>habilidades</strong> necesarias para responder a este tipo de tareas. Recuerda que es una<strong> buena estrategia</strong> cuando te piden que<strong> crees o inventes</strong> algo.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_actividad" id="id540">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_actividad.svg)"><h1 class="iDeviceTitle">8. Realizamos la programación</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta540_540_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><img src="informatica.png" alt="Imagen de una persona programando" title="Programadora" width="200" height="200" style="float: left; margin-right: 10px; margin-left: 10px;">Ha llegado el momento de que realices la <strong>programación</strong> de nuestro <strong>robot</strong> que nos permitirá gracias a sus sensores y actuadores comprender el funcionamiento de los sentidos humanos.</p>
+<p><strong>Crea</strong> un nuevo&nbsp;proyecto en el entorno de programación <strong>MakeCode</strong>.</p>
+<p>Ten presente las <em>buenas prácticas de la programación.</em></p>
+<p>A continuación, crea lo&nbsp;<strong>básico</strong> o <strong>fundamental</strong>&nbsp;para el funcionamiento de los sensores&nbsp;y cuando te funcione de forma correcta, añade el <strong>resto</strong> de <strong>componentes&nbsp;</strong>de forma<strong> progresiva</strong>.</p>
+<p>Es importante ir <strong>paso</strong> <strong>a</strong> <strong>paso</strong> de forma ordenada, probando el funcionamiento de cada uno de los bloques de programación introducidos antes de continuar con el siguiente.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2><span class="sr-av">Lumen dice </span>¿Recuerdas el proceso de programación?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Recuerda que programar es un proceso cíclico, para ello debemos seguir la siguiente estrategia con el proceso que se presenta a continuación:</p>
+<ol>
+<li><strong>Elegir un objetivo:</strong> analizar el problema y seleccionar el primer objetivo a realizar.</li>
+<li><strong>Codificar el objetivo:</strong>&nbsp; escribimos el código para llevar a cabo el objetivo para lo cual realizamos un <a href="#t13b4ee6b-5262-c332-324f-a0b836b9ae3a" id="link13b4ee6b-5262-c332-324f-a0b836b9ae3a" class="exe-tooltip definition-tt titled-tt" title="Algoritmo | Acceder a la definición de algoritmo">algoritmo</a>.</li>
+<li><strong>Probar:</strong> comprobamos los resultados, si todo funciona correctamente pasamos al siguiente objetivo, si no, corregimos los errores.</li>
+<li><strong>Siguiente objetivo:</strong> añadimos nuevas funcionalidades al código realizado<img src="ProcesoProgramacion.1.png" alt="Imagen que describe el diagrama de proceso de programación" title="Diagrama del proceso de programación" style="display: block; margin-left: auto; margin-right: auto;" width="560" height="560"></li>
+</ol>
+<div id="t5bbc18f4-b6f8-98e9-d634-e475a06b846a" class="exe-tooltip-text">
+<p><strong><img src="Diagrama_de_flujo.png" alt="Imagen que muestra el diagrama de flujo de un algoritmo" title="Algoritmo" style="float: left; margin-right: 10px; margin-left: 10px;" width="125" height="125">Definición</strong>:</p>
+<p>Un algoritmo es un conjunto de pasos para llegar a hacer algo.</p>
+<p><strong>Ejemplo</strong>:</p>
+<p>Comprobar porque no enciende la luz lo podemos convertir en un algoritmo.</p>
+</div>
+<div id="t13b4ee6b-5262-c332-324f-a0b836b9ae3a" class="exe-tooltip-text">
+<p><strong><img src="Diagrama_de_flujo.png" alt="Imagen que muestra el diagrama de flujo de un algoritmo" title="Algoritmo" style="float: left; margin-right: 10px; margin-left: 10px;" width="125" height="125">Definición</strong>:</p>
+<p>Un algoritmo es un conjunto de pasos para llegar a hacer algo.</p>
+<p><strong>Ejemplo</strong>:</p>
+<p>Comprobar porque no enciende la luz lo podemos convertir en un algoritmo.</p>
+</div></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_competenciadigital" id="id543">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_competenciadigital.svg)"><h1 class="iDeviceTitle">8.1. Realiza el programa de los sensores</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta543_543_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><strong>Programa</strong>&nbsp;los sensores del <strong>robot</strong>&nbsp;mediante los siguientes pasos:</p>
+<ol>
+<li>Inserta los <strong>bloques de programación</strong> <strong>necesarios</strong> para registrar las lecturas de los sensores. Recuerda que posiblemente necesites bloques condicionales y operadores.</li>
+<li><strong style="font-size: 1.05em;">Comprueba </strong>su<strong style="font-size: 1.05em;"> comportamiento,&nbsp;</strong>inicialmente en el<strong style="font-size: 1.05em;"> simulador&nbsp;</strong>y finalmente en el robot.</li>
+<li><strong style="font-size: 1.05em;">Realiza </strong>las<strong style="font-size: 1.05em;"> correcciones </strong>necesarias.</li>
+</ol>
+<p><strong>Verifica</strong> el correcto <strong>funcionamiento</strong> de la programación de un componente&nbsp;<strong>antes</strong> de <strong>pasar</strong> al&nbsp;<strong>siguiente.</strong></p>
+<p><span style="font-size: 1.05em;">Una vez que consigas que funcionen correctamente los componentes del robot, en el siguiente paso&nbsp;</span><strong style="font-size: 1.05em;">añadiremos</strong><span style="font-size: 1.05em;">&nbsp;progresivamente el </span><strong style="font-size: 1.05em;">resto</strong><span style="font-size: 1.05em;"> de los </span><strong style="font-size: 1.05em;">elementos</strong><span style="font-size: 1.05em;">.</span></p>
+<p>Cargarlo en la placa robótica y comprueba que todo funciona correctamente.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2><span class="sr-av">Lumen dice </span>¿Necesitas ayuda con la programación de los sensores?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Recuerda que hemos visto la programación de los sensores en el apartado <a href="33_programamos_con_makecode.html" title="Accede a la página 4.3. Programamos con MakeCode">4.3. Programamos con MakeCode</a>.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_competenciadigital" id="id2357">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_competenciadigital.svg)"><h1 class="iDeviceTitle">8.2. Programamos los actuadores</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta2357_1134_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><strong>Programa</strong>&nbsp;la representación de los sensores en los <strong>actuadores</strong>&nbsp;del <strong>robot</strong>&nbsp;mediante los siguientes pasos:</p>
+<ol>
+<li>Inserta los <strong>bloques</strong> de programación necesarios para <strong>representar</strong> los valores detectados por los sensores de tu robot en los <strong>actuadores</strong>.</li>
+<li><strong style="font-size: 1.05em;">Comprueba </strong>su<strong style="font-size: 1.05em;"> comportamiento,&nbsp;</strong>inicialmente en el<strong style="font-size: 1.05em;"> simulador&nbsp;</strong>y finalmente en el robot.</li>
+<li><strong style="font-size: 1.05em;">Realiza </strong>las<strong style="font-size: 1.05em;"> correcciones </strong>necesarias.</li>
+</ol>
+<p><strong>Verifica</strong> el correcto <strong>funcionamiento</strong> de la programación de un componente&nbsp;<strong>antes</strong> de <strong>pasar</strong> al&nbsp;<strong>siguiente.</strong></p>
+<p><span style="font-size: 1.05em;">Al igual que en el paso anterior, una vez que consigas que funcionen correctamente los componentes del robot, prácticamente tendremos el reto conseguido</span><span style="font-size: 1.05em;">.</span></p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2><span class="sr-av">Lumen dice </span>¿Necesitas ayuda con la programación de los actuadores?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Si no recuerdas la programación de los actuadores más comunes de la placa micro:bit, no te preocupes, recuerda que lo viste en el apartado <a href="34_cmo_prefieres_ver_lo_que_miden_los_sensores.html" title="Accede al apartado 4.4. ¿Cómo prefieres ver lo que miden los sensores?Programamos con MakeCode">4.4. ¿Cómo prefieres ver lo que miden los sensores?</a></p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_competenciadigital" id="id2364">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_competenciadigital.svg)"><h1 class="iDeviceTitle">9. Debugging de la programación del robot</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta2364_1136_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><strong><img src="glass-gcea7f5a0f_640.jpg" alt="Imagen de una lupa representando una herramienta de búsqueda" title="Lupa" width="120" height="90" style="float: left; margin-right: 10px; margin-left: 10px;">Comprueba</strong> el <strong>funcionamiento</strong> correcto del robot y haz una depuración de la programación del mismo,&nbsp;<strong>detectando</strong> posibles <strong>errores</strong> y <strong>corrigiéndolos</strong>.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice" id="id585">
+<div class="iDevice emphasis0" >
+<div id="ta585_585_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-3"><h2><span class="sr-av">Clavis dice </span>¿Cómo te ha ido?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Esta ha sido la parte más importante porque hemos <strong>puesto en práctica</strong> todo lo aprendido y hemos sido capaces de dar vida a nuestro robot. Por eso es interesante que antes de continuar nos <strong>paremos a pensar</strong> un poco sobre lo que <strong>hemos conseguido</strong>.</p>
+<p>Puedes responder a estas preguntas o puedes hacerlas a un compañera o compañero a modo de entrevista. ¿Qué te parece?</p>
+<ul>
+<li>¿Has logrado <strong>diseñar</strong> tu robot con sensores y actuadores?</li>
+<li>¿Has conseguido <strong>montar</strong> tu robot de forma segura?</li>
+<li>¿Has conseguido <strong>escribir su programa</strong>?</li>
+<li>¿Has conseguido que tu robot <strong>reaccione</strong> a estímulos?</li>
+<li>¿Has logrado <strong>representar las lecturas</strong> de un sensor en un <strong>actuador</strong>?</li>
+<li>¿Has sido capaz de <strong>explicar el funcionamiento</strong> del programa?</li>
+<li>¿Has arreglado posibles <strong>errores</strong> en la programación?</li>
+<li>¿Has conseguido establecer una <strong>similitud</strong> entre el funcionamiento de los sensores y los sentidos humanos?</li>
+<li>¿Te ha resultado <strong>difícil</strong> realizar el <strong>diagrama de flujo</strong> del programa?</li>
+<li>¿Qué cosas has hecho que <strong>ya sabías hacer</strong>?</li>
+<li>¿Alguna vez <strong>habías hecho</strong> algo parecido? ¿Cuándo?</li>
+</ul>
+<p>Después de responder a estas preguntas, comenta con tus compañeras o compañeros qué puedes hacer la próxima vez para <strong>mejorar</strong> en los ejercicios que te han resultado más difíciles.</p></div></div></section></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-nc-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Reconocimiento No comercial Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="41_antes_de_crear_nuestro_robot_aplicamos_lo_visto.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>11</strong> de <strong>14</strong></span> <span class="sep">| </span><a href="5_compartimos_nuestro_trabajo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_adultos_js.js"></script></body></html>

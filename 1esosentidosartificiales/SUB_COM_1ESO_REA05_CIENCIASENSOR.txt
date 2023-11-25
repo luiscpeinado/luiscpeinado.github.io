@@ -1,0 +1,13 @@
+¿Qué miden los sensores?
+Cuando conducimos un coche, recibimos información de la temperatura exterior, de la presión
+de los neumáticos o de la distancia respecto al vehículo que nos precede.
+Vivimos rodeados de sensores, pequeños dispositivos que transforman magnitudes físicas o químicas
+en señales analíticas útiles, en datos que interpretan lo que sucede a nuestro alrededor.
+Los sensores pueden ser de muchos tipos y están formados por dos partes, un receptor,
+que reconoce la sustancia que se quiere analizar, y un transductor, que convierte la señal
+obtenida en una señal que pueda medir un instrumento.
+Si el elemento de reconocimiento es un reactivo biológico, hablamos de biosensores, que constituyen
+un campo de investigación en el que se ha avanzado mucho en los últimos años.
+Se utilizan en muchas aplicaciones, desde los procesos industriales, en los controles
+de calidad o para detectar gases, hasta la medicina, para monitorizar los parámetros
+de actividad del cuerpo humano.

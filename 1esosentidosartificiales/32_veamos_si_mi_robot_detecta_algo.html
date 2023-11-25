@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>3.2. Veamos si mi robot detecta algo | Los sentidos artificiales </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jesús Barreto Pestana" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-128"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Los sentidos artificiales</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Los sentidos artificiales</a></li>
+   <li><a href="1_qu_vamos_a_hacer.html" class="no-ch">1. ¿Qué vamos a hacer?</a></li>
+   <li><a href="2_la_importancia_de_los_sensores.html" class="no-ch">2. La importancia de los sensores</a></li>
+   <li class="current-page-parent"><a href="3_el_sentido_de_los_sensores.html" class="current-page-parent daddy">3. El sentido de los sensores</a>
+   <ul>
+      <li><a href="31_seales_de_vida.html" class="no-ch">3.1. Señales de vida</a></li>
+      <li id="active"><a href="32_veamos_si_mi_robot_detecta_algo.html" class="active no-ch">3.2. Veamos si mi robot detecta algo</a></li>
+      <li><a href="33_programamos_con_makecode.html" class="no-ch">3.3. Programamos con MakeCode</a></li>
+      <li><a href="34_cmo_prefieres_ver_lo_que_miden_los_sensores.html" class="no-ch">3.4. ¿Cómo prefieres ver lo que miden los sensores?</a></li>
+   </ul>
+   </li>
+   <li><a href="4_creamos_un_robot_con_mucho_sentido.html" class="daddy">4. ¿Creamos un robot con mucho sentido?</a>
+   <ul class="other-section">
+      <li><a href="41_antes_de_crear_nuestro_robot_aplicamos_lo_visto.html" class="no-ch">4.1. Antes de crear nuestro robot, ¿aplicamos lo visto?</a></li>
+      <li><a href="42_vamos_a_crear_nuestro_robot.html" class="no-ch">4.2. Vamos a crear nuestro robot</a></li>
+   </ul>
+   </li>
+   <li><a href="5_compartimos_nuestro_trabajo.html" class="no-ch">5. Compartimos nuestro trabajo</a></li>
+   <li><a href="6_sacamos_conclusiones.html" class="no-ch">6. Sacamos conclusiones</a></li>
+   <li><a href="crditos.html" class="no-ch">Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="31_seales_de_vida.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>6</strong> de <strong>14</strong></span> <span class="sep">| </span><a href="33_programamos_con_makecode.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">3.2. Veamos si mi robot detecta algo</h1></header>
+<article class="iDevice_wrapper UDLcontentIdevice" id="id604">
+<div class="iDevice emphasis0" >
+<div id="ta604_817_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Diccionario</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="exe-fx exe-accordion">
+<h2>Corriente</h2>
+<p><img src="Intensidad.png" alt="La imagen muestra un tubo por el que circulan a través de una sección, establecida por un plano secante, una serie de pequeñas bombillas con signo menos que van en la dirección que indica una flecha roja." title="Intensidad de corriente eléctrica" style="float: left; margin-right: 10px; margin-left: 10px;" width="125" height="70"></p>
+<dl style="overflow: hidden;">
+<dt><strong>Definición</strong></dt>
+<dd>
+<p>Es la medida de la cantidad de carga eléctrica que atraviesa una determinada sección de un conductor de un circuito cerrado en la unidad de tiempo. También recibe el nombre de intensidad y se mide en Amperios.</p>
+</dd>
+<dt><strong>Ejemplo</strong></dt>
+<dd>
+<p>La corriente que circula por ese cable es tan alta que resulta peligrosa.</p>
+</dd>
+</dl>
+<h2>Resistencia (magnitud)</h2>
+<p><img src="117715_omega.png" alt="La imagen muestra la letra griega omega mayúscula que representa el símbolo de la resistencia eléctrica." title="Letra Omega" style="float: left; margin-right: 10px; margin-left: 10px;" width="125" height="125"></p>
+<dl style="overflow: hidden;">
+<dt><strong>Definición</strong></dt>
+<dd>
+<p>Es la medida de la oposición al paso de una corriente eléctrica a través de un material.</p>
+</dd>
+<dt><strong>Ejemplo</strong></dt>
+<dd>
+<p>Los materiales aislantes de la electricidad se caracterizan por tener una muy alta resistencia eléctrica.</p>
+</dd>
+</dl>
+<h2>Tensión</h2>
+<p><img src="326906_Voltage.png" alt="La imagen muestra en blanco y negro unas torres de transporte de energía eléctrica en un paisaje" title="Tensión eléctrica" style="float: left; margin-right: 10px; margin-left: 10px;" width="125" height="94"></p>
+<dl style="overflow: hidden;">
+<dt><strong>Definición</strong></dt>
+<dd>
+<p>Es aquello que indica la energía que se transmite a una carga eléctrica en un determinado circuito. También recibe el nombre de diferencia de potencial o de voltaje (en referencia a la unidad en que se mide que es el Voltio).</p>
+</dd>
+<dt><strong>Ejemplo</strong></dt>
+<dd>
+<p>La tensión en los enchufes de nuestras casas es de alrededor de 230 Voltios.</p>
+</dd>
+</dl>
+</div></div></div></section></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice" id="id468">
+<div class="iDevice emphasis0" >
+<div id="ta468_467_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><img src="retor_escolares_conbocadillo.gif" alt="Retor dice" style="float: left;" width="250" height="250" title="Retor">Hasta ahora hemos visto las <strong>señales</strong> analógicas y digitales, las <strong>entradas</strong> y <strong>salidas</strong> de nuestra placa y su importancia en el funcionamiento de la misma.</p>
+<p>En este apartado vamos a aprender cómo es y cómo funcionan los&nbsp;<strong>sensores</strong> de <strong>nuestra</strong> <strong>placa</strong> robótica.</p>
+<p>Luego veremos cómo se <strong>relacionan</strong> los <strong>sensores</strong> con los demás componentes (entradas, salidas y microprocesador). Esto es fundamental para el <strong>proceso</strong> de <strong>relación</strong> de un <strong>robot</strong> con su <strong>entorno</strong>: reciben estímulos externos, los procesan y dan determinadas respuestas.</p>
+<p>Seguro que mucha de la <strong>información</strong> que vas a ver a continuación será <strong>nueva</strong> para ti, por lo que puede ser normal que a veces no entiendas algo. Si esto pasa, no te desanimes y pregúntale a tu profesora o profesor. También puedes ir apuntando en tu cuaderno algunas de las ideas importantes que vayas trabajando para que no se te olviden. No hace falta escribirlo todo, solo lo más importante.</p>
+<p>¡Ánimo! ¡Merecerá la pena!</p></div></div></section></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_rep_lee" id="id473">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_lee.svg)"><h1 class="iDeviceTitle">1. ¿Qué es un sensor, cómo funciona y para qué sirve?</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta473_472_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="exe-fx exe-tabs">
+<h2>¿Qué es?</h2>
+<p>Es un <strong>dispositivo</strong> que <strong>detecta</strong> un <strong>cambio</strong> en el <strong>entorno</strong> y lo <strong>refleja</strong> en su <strong>salida</strong>.</p>
+<p>Un sensor <strong>detecta</strong> una <strong>magnitud</strong> <strong>física</strong> o <strong>química</strong> y la <strong>convierte</strong> en una <strong>salida</strong> <strong>eléctrica</strong> que puede ser un voltaje o <a href="#tfc235261-8fa7-e004-8e58-5f5c8513e514" id="linkfc235261-8fa7-e004-8e58-5f5c8513e514" title="Tensión | Accede a la definición del término" class="exe-tooltip definition-tt titled-tt"><strong>tensión</strong></a>, <a href="#tccd38a17-b46b-798a-2ca7-22774240b657" id="linkccd38a17-b46b-798a-2ca7-22774240b657" title="Corriente | Accede a la definición del término" class="exe-tooltip definition-tt titled-tt"><strong>corriente</strong></a>, <a href="#t154d6c89-d30c-0b95-dc25-97da6e86992c" id="link154d6c89-d30c-0b95-dc25-97da6e86992c" title="Resistencia | Accede a la definición del término" class="exe-tooltip definition-tt titled-tt"><strong>resistencia</strong></a> u otra magnitud eléctrica medible que varía con el tiempo o en algunos casos, en una señal digital.</p>
+<p>El término <strong>sensor</strong> es muy genérico y <strong>agrupa</strong> <strong>varias</strong> <strong>elementos</strong> dentro del dispositivo: el <strong>captador</strong> que recibe la señal y el <strong>transductor</strong> que transforma una magnitud en otra. Es común que los tres términos se usen indistintamente.</p>
+<p>En algunos casos convierte su señal <strong>salida</strong> en una <strong>pantalla</strong> <strong>legible</strong> para las personas o bien, la <strong>transmite</strong> a otro dispositivo para su lectura o procesamiento adicional.</p>
+<p>Un sensor siempre <strong>se</strong> <strong>usa</strong> <strong>junto</strong> <strong>a</strong> <strong>otros</strong> <strong>componentes</strong> electrónicos, sólo no tiene aplicación directa. Normalmente su salida se transmite a un microprocesador.</p>
+<h2>Funcionamiento</h2>
+<p>Un <strong>sensor</strong> se encuentra <strong>formado</strong> de <strong>componentes</strong> tales como LDR (Light Dependent Resistor, en español, resistencia que su valor depende de la luz que le incide), NTC (Negative Temperature Coefficient, es una resistencia cuyo valor depende de la temperatura, se le denomina termistor), resistencias variables, o cualquier otro componente que <strong>varía</strong> su <strong>magnitud</strong> de <strong>acuerdo</strong> con alguna <strong>variable</strong> física o química, y por componentes activos.</p>
+<p>Un <strong>sensor</strong> tiene varios <strong>parámetros</strong> fundamentales:</p>
+<ol>
+<li><strong>Rango</strong>: valores entre los que puede medir.</li>
+<li><strong>Precisión</strong>: es el error de medida máximo esperado.</li>
+<li><strong>Resolución</strong>: la variación mínima que puede detectar.</li>
+<li><strong>Sensibilidad</strong>: lo que varía la magnitud de salida en relación con la variación de la magnitud medida.</li>
+<li><strong>Rapidez</strong> de respuesta.</li>
+<li>Entre otros.</li>
+</ol>
+<h2>Clasificación</h2>
+<p>Los <strong>sensores</strong> se pueden <strong>clasificar</strong> atendiendo a varios <strong>criterios</strong>:</p>
+<ul>
+<li><strong>Señal que emiten</strong>: analógicos y digitales.</li>
+<li><strong>Influencia que tienen sobre el proceso</strong>: sensores pasivos cuando no influyen y sensores activos cuando absorben energía.</li>
+<li><strong>Parámetros que pueden variar en el sensor</strong>: mecánicos, eléctricos, electromagnéticos, ópticos...</li>
+</ul>
+<p>En el caso de los sensores <strong>analógicos</strong> y <strong>digitales</strong>,&nbsp;miden una magnitud física o química y la convierten en una salida como un voltaje analógico o digital.</p>
+<p>Los sensores <strong>analógicos</strong> <strong>generan</strong> una señal analógica acorde a lo que detectan. Estos sensores transforman el cambio del entorno en un <strong>voltaje</strong> <strong>analógico</strong>.</p>
+<p>De forma similar, los sensores <strong>digitales</strong> <strong>generan</strong> una <strong>señal</strong> <strong>digital</strong> acorde a lo que miden en su entrada. Tendrán dos estados: cambio del entorno detectado o no detectado, es decir, si o no, 1 o 0, activado o desactivado. La señal de salida eléctrica que genera dependerá de la fuente de alimentación, por ejemplo, puede ser 5V o 0V.</p>
+<h2>Aplicaciones</h2>
+<p style="text-align: justify;">En general, la tecnología actual permite disponer de una amplia gama de sensores que se pueden utilizar para <strong>diversas</strong> <strong>aplicaciones</strong>.</p>
+<p style="text-align: justify;">Los sensores se pueden usar para <strong>medir</strong> <strong>variaciones</strong> en las condiciones de una <strong>magnitud</strong> física o química del entorno, <strong>provocando</strong> el <strong>accionando</strong> en otros dispositivos como sonar alarma, encendido o apagado de luces, movimiento en actuadores...</p>
+<p style="text-align: justify;">Los sensores son indispensables en muchas aplicaciones industriales que se utilizan para el <strong>control de procesos,&nbsp;</strong>ya que permiten detectar parámetros que serían indetectables para el ser humano.</p>
+<p style="text-align: justify;">Las <strong>áreas</strong> más comunes de <strong>aplicación</strong> de los <strong>sensores</strong> son:</p>
+<ol>
+<li style="text-align: justify;">La industria para el control de sus procesos de fabricación y mantenimiento industrial.</li>
+<li style="text-align: justify;">Industria automotriz en sus vehículos.</li>
+<li style="text-align: justify;">Industria aeroespacial.</li>
+<li style="text-align: justify;">Robótica.</li>
+<li style="text-align: justify;">Medicina.</li>
+<li style="text-align: justify;">Entre otras.</li>
+</ol>
+<h2>Vídeo</h2>
+<p style="text-align: justify;">En el siguiente vídeo puedes ver <strong>¿Qué miden los sensores?</strong></p>
+<p style="text-align: center;"><iframe width="560" height="314" src="https://www.youtube.com/embed/nzAkaQydzgQ?rel=0&amp;hl=es&amp;cc_lang_pref=es&amp;cc_load_policy=1" allowfullscreen="allowfullscreen"></iframe><br>Si lo necesitas, puedes descargar los subtítulos del video en <strong>formato texto</strong> haciendo <a href="SUB_COM_1ESO_REA05_CIENCIASENSOR.txt" target="_blank" title="Subtítulos del video en formato texto. " rel="noopener">clic aquí</a>. <br>Si lo prefieres también los puedes descargar en formato de <strong>subtítulo .vtt </strong>haciendo <a href="SUB_COM_1ESO_REA05_CIENCIASENSOR.vtt" target="_blank" title="Subtítulos del video en formato vtt. " rel="noopener">clic aquí.</a> <br><strong>Nota</strong>: Se abrirán en <strong>ventana</strong> <strong>nueva</strong>. Colócate <strong>sobre</strong> <strong>el</strong> <strong>texto</strong>, haz clic en el <strong>botón</strong> <strong>derecho</strong> de tu ratón y podrás <strong>descargarlos</strong> en el <strong>formato</strong> <strong>original</strong>.</p>
+</div>
+<div id="t5cef20a1-b64e-e217-ef1f-8bc5af4b1cd4" class="exe-tooltip-text">
+<p><strong><img src="Silicio.png" alt="Imagen que muestra el Silicio en la tabla periódica" title="Silicio" style="float: left; margin-right: 10px; margin-left: 10px;" width="100" height="100">Definición</strong>:</p>
+<p>Es un material muy abundante que puede comportarse como un conductor o aislante de la corriente eléctrica. Se utiliza en la industria electrónica y microelectrónica, para fabricar componentes.</p>
+<p><strong>Ejemplo</strong>:</p>
+<p>La mayoría de los componentes electrónicos están hechos de silicio.</p>
+</div>
+<div id="tb081283b-fef6-9ae0-e323-b601b9ca381f" class="exe-tooltip-text">
+<p><strong><img src="RAM.png" alt="Imagen que muestras tarjetas con memorias RAM para ordenador" title="RAM" style="float: left; margin-right: 10px; margin-left: 10px;" width="100" height="100">Definición</strong>:</p>
+<p>RAM acrónimo de Random Access Memory o Memoria de Acceso Aleatorio. Es la memoria principal de un dispositivo, es donde se almacenan de forma temporal los datos de los programas que se están utilizando en ese momento.</p>
+<p><strong>Ejemplo</strong>:</p>
+<p>La memoria RAM almacena la información de los sensores.</p>
+</div>
+<div id="tccd38a17-b46b-798a-2ca7-22774240b657" class="exe-tooltip-text">
+<p><img src="Intensidad.png" alt="La imagen muestra un tubo por el que circulan a través de una sección, establecida por un plano secante, una serie de pequeñas bombillas con signo menos que van en la dirección que indica una flecha roja." title="Intensidad de corriente eléctrica" style="float: left; margin-right: 10px; margin-left: 10px;" width="125" height="70"></p>
+<p><strong>Definición</strong></p>
+<p>Es la medida de la cantidad de carga eléctrica que atraviesa una determinada sección de un conductor de un circuito cerrado en la unidad de tiempo. También recibe el nombre de intensidad y se mide en Amperios.</p>
+<p><strong>Ejemplo</strong></p>
+<p>La corriente que circula por ese cable es tan alta que resulta peligrosa.</p>
+</div>
+<div id="t154d6c89-d30c-0b95-dc25-97da6e86992c" class="exe-tooltip-text">
+<p><img src="117715_omega.png" alt="La imagen muestra la letra griega omega mayúscula." title="Omega" style="float: left; margin-right: 10px; margin-left: 10px;" width="125" height="125"></p>
+<p><strong>Definición</strong></p>
+<p>Es la medida de la oposición al paso de una corriente eléctrica a través de un material.</p>
+<p><strong>Ejemplo</strong></p>
+<p>Los materiales aislantes de la electricidad se caracterizan por tener una muy alta resistencia eléctrica.</p>
+</div>
+<div id="tfc235261-8fa7-e004-8e58-5f5c8513e514" class="exe-tooltip-text">
+<p><img src="326906_Voltage.png" alt="La imagen muestra en blanco y negro unas torres de transporte de energía eléctrica en un paisaje" title="Tensión" style="float: left; margin-right: 10px; margin-left: 10px;" width="125" height="94"></p>
+<p><strong>Definición</strong></p>
+<p>Es aquello que indica la energía que se transmite a una carga eléctrica en un determinado circuito. También recibe el nombre de diferencia de potencial o de voltaje (en referencia a la unidad en que se mide que es el Voltio).</p>
+<p><strong>Ejemplo</strong></p>
+<p>La tensión en los enchufes de nuestras casas es de alrededor de 230 Voltios.</p>
+</div></div><article class="exe-udlContent-content-simplified js-hidden"><header class='exe-udlContent-alt-content-title'><h2>Lectura facilitada</h2></header><p>¿Qué es un sensor?</p>
+<p>Un sensor es una dispositivo que sirve para detectar cambios en nuestro entorno.</p>
+<p>El sensor detecta en su entrada una magnitud física o química y la convierte para que salga una salida eléctrica.</p>
+<p>Es un término genérico que engloba varios elementos: el captador que recibe la señal y el transductor que transforma una magnitud en otra.</p>
+<p>Un sensor se encuentra formado de componentes que varían su magnitud de acuerdo con alguna variable física o química.</p>
+<p>Los sensores se pueden clasificar atendiendo a varios criterios:</p>
+<ul>
+<li>Señal que emiten: analógicos y digitales.</li>
+<li>Influencia que tienen sobre el proceso: sensores pasivos: cuando no influyen y sensores activos cuando absorben energía.</li>
+<li>Parámetros que pueden variar en el sensor: mecánicos, eléctricos, electromagnéticos, ópticos,...<br> </li>
+<li><strong>Circuitos de <a href="#te00f46ae-c6a2-e977-4a32-385649265a74" id="linke00f46ae-c6a2-e977-4a32-385649265a74" class="exe-tooltip definition-tt titled-tt" title="Entrada | Acceder a la definición de entrada">entrada</a> y <a href="#t447ae074-a7c3-cfaf-ccec-53d580793663" id="link447ae074-a7c3-cfaf-ccec-53d580793663" class="exe-tooltip definition-tt titled-tt" title="Salida | Acceder a la definición de salida">salida</a></strong> para comunicarse y poder controlar otros aparatos conectados.</li>
+</ul>
+<p>En general, la tecnología actual permite disponer de una amplia gama de sensores que se pueden utilizar para diversas aplicaciones.</p>
+<div id="tcbb5ee53-d639-dcf8-5491-6f720e6cf80f" class="exe-tooltip-text">
+<p><strong><img src="RAM.png" alt="Imagen que muestras tarjetas con memorias RAM para ordenador" title="RAM" style="float: left; margin-right: 10px; margin-left: 10px;" width="125" height="125">Definición</strong>:</p>
+<p>Es la memoria principal de un dispositivo.</p>
+<p><strong>Ejemplo</strong>:</p>
+<p>La memoria RAM almacena la información de los sensores.</p>
+</div>
+<div id="te00f46ae-c6a2-e977-4a32-385649265a74" class="exe-tooltip-text">
+<p><strong><img src="teclado.png" alt="Imagen que muestra un teclado" title="Entrada" style="float: left; margin-right: 10px; margin-left: 10px;" width="125" height="125">Definición</strong>:</p>
+<p>Elemento que lleva información a un sistema informático.</p>
+<p><strong>Ejemplo</strong>:</p>
+<p>El ratón y el teclado son entradas de un ordenador.</p>
+</div>
+<div id="t447ae074-a7c3-cfaf-ccec-53d580793663" class="exe-tooltip-text">
+<p><strong><img src="pantalla_LCD.png" alt="Imagen que muestra la pantalla de un ordenador" title="Salida" style="float: left; margin-right: 10px; margin-left: 10px;" width="125" height="125">Definición</strong>:</p>
+<p>Elemento que muestra la información en un sistema informático.</p>
+<p><strong>Ejemplo</strong>:</p>
+<p>La pantalla es un componente de salida en un ordenador.</p>
+</div>
+<div id="t49ce9fc7-04d8-b2fa-3981-e89c34257a1f" class="exe-tooltip-text">
+<p><img src="EntornoProgramacion-def.png" alt="Imagen que muestra el entorno de programación online de Scratch" title="Entorno de programación" style="float: left; margin-right: 10px; margin-left: 10px;" width="125" height="125"><strong>Definición</strong>:</p>
+<p>Es un programa que permite escribir código y transformarlo en una aplicación informática.</p>
+<p><strong>Ejemplo</strong>:</p>
+<p>Python es un entorno de programación.</p>
+</div>
+<div id="td600b74c-2be3-3c06-eeeb-7f057f65fccd" class="exe-tooltip-text">
+<p><strong><img src="Programar-def.png" alt="Imagen que muestra un programa" title="Programar" style="float: left; margin-right: 10px; margin-left: 10px;" width="125" height="125">Definición</strong>:</p>
+<p>Dar instrucciones a una máquina o aparato para que realice funciones.</p>
+<p><strong>Ejemplo</strong>:</p>
+<p>Vamos a programar el robot.</p>
+</div><button class="exe-udlContent-alt-content-hide">Cerrar</button></article></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-2"><h2><span class="sr-av">Kardia dice </span>¿Quieres saber más sobre los sensores?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="exe-fx exe-accordion">
+<h2>¿Sabes la importancia de los sensores en la sociedad actual?</h2>
+<p>Los <strong>sensores</strong> son <strong>fundamentales</strong> en muchos ámbitos de la sociedad actual. Son determinantes en instalaciones de <strong>seguridad</strong>, <strong>vigilancia</strong>, <strong>monitoreo</strong> de <strong>información</strong> en general, <strong>automatización</strong> de procesos y en el <strong>control</strong> de <strong>procesos</strong> a todas las escalas, incluyendo sobre todo el sector industrial.</p>
+<p>En los <strong>sistemas</strong> de <strong>automatización</strong> industrial los sensores pueden medir diferentes variables como:</p>
+<ol>
+<li>Variables&nbsp;de <strong>proceso</strong>, como la presión, el flujo, el nivel, el pH, la turbidez, temperatura…</li>
+<li>Variables&nbsp;<strong>mecánicas</strong>, como la posición, dirección de desplazamiento,&nbsp;rotación, número de ciclos, proximidad, presiones estáticas y dinámicas…</li>
+<li>Variables&nbsp;<strong>eléctricas</strong>, como el voltaje, la corriente, la resistencia eléctrica...</li>
+<li>Variables&nbsp;<strong>ambientales</strong>, como la dirección del viento, humedad, velocidad,&nbsp;vibración…</li>
+</ol>
+<h2>¿Sabes cuál es el origen del término sensor?</h2>
+<p>La palabra <strong>sensor</strong> proviene del <strong>latín</strong> y significa que puede <strong>sentir algo externo.</strong></p>
+<p>Su composición léxica es:</p>
+<ul>
+<li><strong>sensus</strong>: acción de sentir, percibir, ser sensible a, darse cuenta de.</li>
+<li><strong>or</strong>: sufijo añadido que significa agente.</li>
+</ul>
+<p>Así que su concepto etimológico es, lo que es sensible a.</p>
+<h2>¿Sabes cuál fue el primer sensor de la historia?</h2>
+<p>Aunque es complejo determinar cuál fue el <strong>primer</strong> <strong>sensor</strong> de la historia, sí se tiene evidencias de sensores creados por el ser humano en distintas épocas de la historia de la humanidad.</p>
+<p>En la <strong>edad</strong> de <strong>piedra</strong> se diseñaron los primeros sistemas de automatización, consistentes en <strong>trampas</strong> para <strong>cazar</strong> animales.</p>
+<p>Sobre el año 2000 a.C.(antes de Cristo) en Babilonia el hombre desarrollo sistemas que <strong>automatizaban</strong> el <strong>regadío</strong> de los campos.</p>
+<p>En el siglo III antes de Cristo <strong>Ktesibios</strong> diseñó un reloj de agua denominado <strong>Clepsydra</strong> que utilizaba un sistema de regulación automático del nivel de agua mediante un flotador que actuaba como sensor para conseguir regular la entrada de agua. Posteriormente, <strong>Platón</strong> en el 378 a.C. diseñó un <strong>despertador</strong> <strong>automático</strong> basándose en una Clepsydra, colocó bolas metálicas encima del flotador de tal forma que cuando se llenaba el depósito las bolas caían sobre un plato de cobre para producir un sonido.</p>
+<p>En el siglo I a.C., <strong>Herón</strong> de Alejandría describía un <strong>dispensador</strong> de <strong>vino</strong> que utilizaba un <strong>sensor</strong> (<b>flotador</b>) que cerraba una válvula por efecto de vaso comunicantes.</p>
+<p>En 1592 <strong>Galileo</strong> construyó un sensor que detectaba cambios de <strong>temperaturas</strong> mediante la contracción del aire en un recipiente que desplazaba una columna de agua, determinando así las modificaciones del entorno.&nbsp;</p>
+<p>El <strong>primer</strong> <strong>termómetro</strong> fue inventado en 1612 por&nbsp;<strong>Santorio</strong> en Italia, consistía en un líquido dentro de un tubo de vidrio sellado con una escala graduada.</p>
+<p>En 1874 <strong>científicos</strong> <strong>franceses</strong> lograron poner en funcionamiento el primer <strong>sensor</strong> <strong>conectado</strong> de la historia utilizando la tecnología de comunicaciones de transmisión de señales por onda corta.</p>
+<p>Durante muchos años los <strong>sensores</strong> han estado sin estar conectados a nada, todavía hoy en día hay muchos que solo miden e informan de forma local, sin estar conectados a otros dispositivos. Sin embargo, hoy en día un <strong>sensor</strong> <strong>sin conexión a un procesador o a una red no tiene mucho sentido</strong>.</p>
+<h2>Existen animales con sentidos especiales ¿sabes qué sentidos tienen?</h2>
+<p>En el <strong>reino</strong> <strong>animal</strong> hablamos de <strong>más</strong> de <strong>5 sentidos</strong>.</p>
+<p>Debido al instinto de supervivencia y adaptación muchas especias han desarrollado <strong>sentidos especiales</strong>.</p>
+<p>Algunos de ellos, son:</p>
+<ul>
+<li><strong>Sonar</strong>: propagación de ondas de sonido que permite comunicarse o ubicarse. Por ejemplo: murciélagos y delfines.</li>
+<li><strong>Orientación magnética</strong>: capacidad de orientarse con respecto a los polos magnéticos. Ejemplo: abejas.</li>
+<li><strong>Sensibilidad a la temperatura</strong>: permite detectar cuerpos calientes a su alrededor. Por ejemplo: las serpientes.</li>
+<li><strong>Regeneración</strong>: capacidad de regenerar algunas partes de su cuerpo cuando son mutiladas. Ejemplo: calamar y lajartijas.</li>
+</ul>
+<h2>Sensores inteligentes de las ciudades</h2>
+<p style="text-align: justify;">En la actualidad disponemos de una generación de <strong>sensores</strong> <strong>inteligentes</strong> que permiten diseñar espacios en los que continuamente se están detectando y recopilando información muy variadas.&nbsp;</p>
+<p style="text-align: justify;">Las <strong>ciudades</strong> <strong>inteligentes</strong> son un ejemplo de aplicación de estos sensores.</p>
+<p style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2br8xkxh4e0?start=244" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0"></iframe><br>Si lo necesitas, puedes activar los subtítulos del video.</p>
+</div></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-3"><h2><span class="sr-av">Clavis dice </span>Puedo ayudarte a memorizar esta información</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Para conseguir alcanzar una meta es importante que seas un <strong>buen o buena estratega</strong>. Es decir, tener <strong>métodos, técnicas, “trucos”</strong> para llegar antes o de forma más fácil donde tú quieres.</p>
+<p>Ahora te voy a enseñar una estrategia, ¡Aprovéchala para alcanzar tu reto!</p>
+<p>El nombre de la estrategia es <strong>memorización</strong>. Cuando estás desarrollando una tarea es normal que encuentres aspectos que te resulten complicados de memorizar y que puedan llegar a bloquearte si no sabes tratarlos adecuadamente. En esta estrategia vas a aprender a memorizar y recordar la información&nbsp;aplicando algunos consejos básicos que te sugieran cómo organizar tu tiempo y actuar en cada caso para superar la dificultad.</p>
+<p>Podrás encontrar todo lo que necesitas sobre esta estrategia en los siguientes enlaces a las siguientes guías de la competencia de aprender a aprender:</p>
+<ul>
+<li><a href="https://edea.juntadeandalucia.es/bancorecursos/file/e0b96995-385b-4137-9c98-12bbbfa7e7c8/1/Guia_aprender_a_aprender_secundaria.zip/aprendo_a_memorizar_y_recordar.html" target="_blank" title="Accede a la guía para aprender a aprender donde te explicamos técnicas para memorizar/evocar." rel="noopener">Aprendo a memorizar y recordar</a>.</li>
+<li><a href="https://edea.juntadeandalucia.es/bancorecursos/file/e0b96995-385b-4137-9c98-12bbbfa7e7c8/1/Guia_aprender_a_aprender_secundaria.zip/organizo_mi_tiempo_para_memorizar.html" target="_blank" title="Accede a la guía para aprender a aprender donde te explicamos técnicas para la organización de tu tiempo para la memorización." rel="noopener">Organizo mi tiempo para memorizar</a></li>
+</ul>
+<p>Tómate el tiempo que necesites y recuerda que siempre puedes preguntarle al docente o a algún compañero o compañera cuando no entiendas algo.</p>
+<p>¡Ánimo, seguro que lo haces genial!</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_coproducciontxt" id="id475">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_coproducciontxt.svg)"><h1 class="iDeviceTitle">2. ¿Qué sabes sobre los sensores?</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta475_474_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>En pareja, a partir de la información suministrada en la lectura "1. ¿Qué es un sensor, cómo funciona y para qué sirve?", <strong>completa</strong> el <strong>siguiente</strong> <strong>esquema e</strong>&nbsp;<b>incluye la información en la página web de la asignatura</b>.</p>
+<figure class="exe-figure exe-image position-center" style="text-align: center;"><img src="esquema_sensor_ejercicio.png" title="Esquema sobre aspectos de los sensores" alt="Imagen que describe un esquema sobre los sensores, como son, cómo funcionan, los tipos" width="573" height="401"></figure></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_coproducciontxt" id="id640">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_coproducciontxt.svg)"><h1 class="iDeviceTitle">3. Qué papel tienen los sensores en el control de los procesos?</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta640_635_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Como hemos visto, los <strong>sensores</strong> reciben constantemente variaciones en una magnitud física o química de nuestro entorno y las convierten en otro tipo de señales, generalmente eléctricas, en un sistema de medida o control.</p>
+<p>Los robots reciben información de su entorno gracias a los sensores, la procesan en un microcontrolador y emiten una respuesta a través de un actuador. A este sistema se le denomina un <strong>sistema de control</strong> que permite actuar sobre las variables de un proceso dependiendo de los valores detectados, con la finalidad de mantenerlo controlado.</p>
+<p>Los <strong>sensores</strong> son dispositivos muy importantes en el <strong>control</strong> de un <strong>proceso</strong>.</p>
+<p>Así, se pueden elaborar <strong>programas</strong> que <strong>utilicen</strong> los valores de los <strong>sensores</strong> como <strong>desencadenante</strong> de otras <strong>acciones</strong>. Como, por ejemplo, los sistemas de control cotidianos: luces que se encienden cuando el nivel de luz cae por debajo de cierto valor, aire acondicionado que se apaga cuando la temperatura baja por debajo de cierto valor o alarmas que suenan cuando se detecta movimiento.</p>
+<p>Vamos a diferenciar dos <strong>tipos</strong> de <strong>sistemas</strong> <strong>control</strong>, de lazo <strong>abierto</strong> y <strong>cerrado</strong>. Además, según la naturaleza de sus elementos tenemos sistemas de control <strong>manuales</strong> y <strong>automáticos</strong>.</p>
+<div class="exe-fx exe-paginated">
+<h2>Lazo de control abierto</h2>
+<p>En este tipo de sistema de <strong>control</strong> la <strong>salida</strong> <strong>no</strong> <strong>tiene</strong> <strong>efecto</strong> sobre el sistema.</p>
+<p>Estos sistemas se denominan <strong>automatismos</strong> y no <strong>robots</strong> porque al <strong>no</strong> tener en cuenta la salida del proceso su capacidad de control efectiva es poco "inteligente".</p>
+<p><img src="lazo_cerrado.png" alt="Imagen que describe un diagrama de los elementos y funcionamiento de un lazo automático de control abierto" title="Diagrama de los elementos y funcionamiento de un lazo automático de control abierto" style="display: block; margin-left: auto; margin-right: auto;" width="484" height="128"></p>
+<p>Por ejemplo, una tostadora calienta el pan durante un tiempo determinado independientemente de que si la tostada está hecha o no. El microondas calienta durante el tiempo programado sin conocer el estado de la sustancia o alimento introducido.</p>
+<h2>Lazo de control cerrado</h2>
+<p>En estos sistemas la toma de <strong>decisiones</strong> no solo <strong>depende</strong> de la entrada sino <strong>también</strong> de la <strong>salida</strong>.</p>
+<p>Los <strong>robots</strong>&nbsp;funcionan como sistemas de control <strong>cerrados</strong>.</p>
+<p>Estos sistemas son capaces de reaccionar si la salida que está obteniendo no es la esperada.</p>
+<p><img src="lazo_abierto.png" alt="Imagen que describe el diagrama de un sistema de control de lazo cerrado" title="Diagrama de los elementos y funcionamiento un sistema de control de lazo cerrado" style="display: block; margin-left: auto; margin-right: auto;" width="483" height="201"></p>
+<p>Por ejemplo, un sistema de riego automático que está midiendo constantemente la humedad de las plantas para poner en marcha o detener el riego.</p>
+<h2>Control manual y automático</h2>
+<p>Antiguamente los ajustes necesarios en un proceso los realizaba una persona (<strong>control manual</strong>) utilizando sus propios sentidos. Pero nuestros <strong>sentidos</strong> tienen sus <strong>limitaciones</strong>.</p>
+<p>El ser humano ha creado los <strong>sensores</strong> que normalmente <strong>superan</strong> nuestra capacidad para percibir el entorno.</p>
+<p>En la actualidad, las diferentes variables físicas o químicas son controladas por un sistema electrónico o robótico (<strong>control automático</strong>).</p>
+<p>Vamos a trabajar en pareja el siguiente <strong>ejemplo</strong>:</p>
+<p><em>Deseamos controlar de forma automática el encendido de las luces de un dormitorio cuando se haga de noche.</em></p>
+<p>En el caso del <strong>control manual</strong> de este proceso nuestro sentido de la vista detecta una cantidad de luz baja, envía esa información a nuestro cerebro que a su vez envía la orden a nuestras extremidades para accionar el interruptor de la luz.<img src="control_manual_encender_luz.png" alt="Imagen que describe el proceso manual de encendido de la luz cuando se hace de noche" title="Proceso manual de encendido de la luz cuando se hace de noche" style="display: block; margin-left: auto; margin-right: auto;" width="720" height="316">Si deseamos automatizar este proceso (control automático), <strong>piensa</strong> y <strong>representa</strong> en un <strong>esquema</strong> o <strong>diagrama</strong> de bloques cómo sería este <strong>proceso</strong> y el papel que juega el sensor en el mismo.</p>
+</div></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2><span class="sr-av">Lumen dice </span>¿Necesitas ayuda con este ejercicio?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Ten presente que para empezar el ejercicio debes <strong>completar</strong> cada uno de los <strong>bloques</strong> del siguiente <strong>diagrama</strong> que describe el proceso de control automático para el encendido de una luz cuando se hace de noche.</p>
+<p><img src="control_automatico_encender_luz.png" alt="Imagen que describe el proceso de encendido de luces al oscurecer" title="Control automático del proceso de encendido de una luz al oscurecer" style="display: block; margin-left: auto; margin-right: auto;" width="620" height="272"></p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_rep_lee" id="id641">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_lee.svg)"><h1 class="iDeviceTitle">4. ¿Qué tipos de sensores hay?</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta641_636_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Vamos a ver la <strong>clasificación</strong> más usada de los <strong>sensores</strong>&nbsp;que se fundamenta en el <strong>tipo</strong> de <strong>señal</strong> que generan en su salida: <strong>digital</strong> o <strong>analógica</strong>.</p>
+<p>Si deseamos comprender el funcionamiento o conectar un sensor externo a nuestra placa, tendremos que averiguar si el sensor es digital o analógico.</p>
+<p>Existen <strong>otras</strong> <strong>clasificaciones</strong> de los sensores que se fundamentan en la magnitud física o química que son capaces de detectar.</p>
+<p>Así que podemos clasificar los sensores en:</p>
+<div class="exe-fx exe-tabs">
+<h2>Sensores digitales</h2>
+<p>En estos sensores su <strong>salida</strong> en una <strong>señal</strong> <strong>codificada</strong> en forma de pulsos o en código binario (0,1). Son comunes en diversas aplicaciones.</p>
+<p>Dentro de este tipo de sensores podemos encontrar los sensores <strong>todo-nada</strong> que indican sólo cuando la variable detectada sobrepasa o no, un nivel determinado.</p>
+<p>Entre ellos encontramos:</p>
+<ol>
+<li><strong>Pulsadores:&nbsp;</strong>cuando pulsamos vale un 1 y cuando no pulsamos 0.</li>
+<li><strong>Sensores inductivos y capacitivos</strong>: detectan la presencia o no de un objeto en su entorno.</li>
+<li><strong>Contacto</strong>: son interruptores que se pueden desactivar o activar si están o no en contacto con algún objeto.</li>
+<li><strong>Presostato</strong>: detecta cuando la variable presión alcanza un valor determinado.</li>
+<li><strong>Termostato</strong>: detecta cuando la variable presión alcanza un valor determinado.</li>
+<li>Entre otros.</li>
+</ol>
+<h2>Sensores analógicos</h2>
+<p>Estos sensores dan como <strong>salida</strong> una <strong>señal</strong> <strong>variable</strong> en forma continua dentro del rango de medida. Algunos de los sensores que podemos encontrar para aplicaciones de electrónica y robótica, incluso a nivel industrial, son:</p>
+<ol>
+<li><strong>Acelerómetro</strong>: miden la aceleración lineal.</li>
+<li><strong>Sensores de temperatura</strong>: mide la temperatura en su entorno.</li>
+<li><strong>Sensores de luz y de color</strong>: miden la cantidad luz recibida.</li>
+<li><strong>Sensores de sonido</strong>: miden el sonido recibido convirtiendo las ondas sonoras en señales eléctricas.</li>
+<li><strong>Compás Magnetómetro</strong>: detectan la dirección del campo magnético de la Tierra, como las brújulas.</li>
+<li><strong>Sensores magnéticos</strong>: detectan cambios de campos magnéticos.</li>
+<li><strong>Sensores de movimiento</strong>: detectan movimiento en su entorno.</li>
+<li><strong>Sensores de distancia, proximidad IR y ultrasonidos</strong>: miden la distancia a la que se encuentran objetos a su alrededor.</li>
+<li><strong>Sensores de distancia y proximidad inductivos</strong>: detectan la distancia a objetos metálicos.</li>
+<li><strong>Sensores Giroscopios</strong>: miden velocidad angular y sirven para la orientación de un objeto.</li>
+<li><strong>Sensores de presión</strong>: miden fuerzas aplicadas sobre ellos, convirtiéndolas en señales eléctricas.</li>
+<li><strong>Sensores de gas</strong>: detectan la presencia de elementos gaseosos.</li>
+<li><strong>Sensores inerciales</strong>: combinan acelerómetro, giróscopio y magnetómetro.</li>
+<li><strong>Sensores de caudal</strong>: miden niveles de flujo de fluido transmitido por el dispositivo.</li>
+<li><strong>Sensores de nivel de fluido</strong>: miden el nivel del fluido en el que están inmersos.</li>
+<li><strong>Sensores meteorológicos</strong>: componen una estación metereológica; barómetro, humedad, temperatura, nivel de agua...</li>
+<li><strong>Sensores de corriente</strong>: detectan la circulación de corriente eléctrica.</li>
+<li><strong>Sensores de humedad</strong>: mide la humedad en su entorno.</li>
+<li><strong>Sensores calidad del aire</strong>: miden partículas o gases, polvo o CO2 en el aire.</li>
+<li><strong>Lectores de Huellas Dactilares</strong>: es un sensor biométrico que identifica una huella dactilar.</li>
+<li><strong>Sensores médicos</strong>: hay de muchos tipos, sensores de tensión muscular, pulso, entre otros.</li>
+<li>Entre otros.</li>
+</ol>
+</div></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-2"><h2><span class="sr-av">Kardia dice </span>¿Sabes cuántos sensores hay dentro de un smartphone?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Los <strong>Smartphones</strong> o <strong>teléfonos inteligentes</strong> actuales cada vez son más capaces de recoger una infinidad de datos de nuestro entorno gracias a sus sensores.</p>
+<p>Nos podemos encontrar con aproximadamente unos <strong>10 sensores</strong>. Los más comunes que incluyen son:</p>
+<ol>
+<li>Acelerómetro.</li>
+<li>Giroscopio.</li>
+<li>Magnetómetro.</li>
+<li>Proximidad.</li>
+<li>Luz.</li>
+<li>Barómetro.</li>
+<li>Termómetro.</li>
+<li>Huellas digitales.</li>
+<li>Cámara.</li>
+<li>Micrófono.</li>
+<li>Humedad.</li>
+<li>Podómetro.</li>
+<li>Pulsómetro.</li>
+</ol>
+<p>Te propongo que investigues para qué se utilizan estos sensores en un smartphone.</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper ListaIdevice em_iDevice em_iDevice_question" id="id731">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">5. ¿Sensor analógico o digital?</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta731_131" class="block instructions iDevice_content">
+Lea y complete
+</section>
+
+<section class="activity" id="activity-731_132">
+<form name="cloze-form-731_132" action="#" class="activity-form cloze-form">
+<div id="cloze731_132">
+<p>Un sensor de movimiento es un   
+<label for="clozeBlank731_132.0" class="sr-av">Rellenar huecos (1):</label>
+<select id="clozeBlank731_132.0">
+<option selected="selected"> </option><option value="sensor digital">sensor digital</option><option value="sensor analógico">sensor analógico</option>
+</select>
+<span style="display:none" id="clozeAnswer731_132.0">JXUwMDJiJXUwMDE2JXUwMDBiJXUwMDFkJXUwMDFjJXUwMDFkJXUwMDUyJXUwMDQxJXUwMDBmJXUwMDBmJXUwMDBkJXUwMDlmJXUwMDk0JXUwMDBlJXUwMDBhJXUwMDBj</span>
+ </p>
+<p>Un pulsador es un   
+<label for="clozeBlank731_132.1" class="sr-av">Rellenar huecos (2):</label>
+<select id="clozeBlank731_132.1">
+<option selected="selected"> </option><option value="sensor digital">sensor digital</option><option value="sensor analógico">sensor analógico</option>
+</select>
+<span style="display:none" id="clozeAnswer731_132.1">JXUwMDJiJXUwMDE2JXUwMDBiJXUwMDFkJXUwMDFjJXUwMDFkJXUwMDUyJXUwMDQ0JXUwMDBkJXUwMDBlJXUwMDBlJXUwMDFkJXUwMDE1JXUwMDBk</span>
+   </p>
+<p>Un Termostato es un   
+<label for="clozeBlank731_132.2" class="sr-av">Rellenar huecos (3):</label>
+<select id="clozeBlank731_132.2">
+<option selected="selected"> </option><option value="sensor digital">sensor digital</option><option value="sensor analógico">sensor analógico</option>
+</select>
+<span style="display:none" id="clozeAnswer731_132.2">JXUwMDJiJXUwMDE2JXUwMDBiJXUwMDFkJXUwMDFjJXUwMDFkJXUwMDUyJXUwMDQ0JXUwMDBkJXUwMDBlJXUwMDBlJXUwMDFkJXUwMDE1JXUwMDBk</span>
+ </p>
+<p>Un sensor del tipo "todo o nada" es un   
+<label for="clozeBlank731_132.3" class="sr-av">Rellenar huecos (4):</label>
+<select id="clozeBlank731_132.3">
+<option selected="selected"> </option><option value="sensor digital">sensor digital</option><option value="sensor analógico">sensor analógico</option>
+</select>
+<span style="display:none" id="clozeAnswer731_132.3">JXUwMDJiJXUwMDE2JXUwMDBiJXUwMDFkJXUwMDFjJXUwMDFkJXUwMDUyJXUwMDQ0JXUwMDBkJXUwMDBlJXUwMDBlJXUwMDFkJXUwMDE1JXUwMDBk</span>
+   </p>
+<p>El sensor de temperatura es un   
+<label for="clozeBlank731_132.4" class="sr-av">Rellenar huecos (5):</label>
+<select id="clozeBlank731_132.4">
+<option selected="selected"> </option><option value="sensor digital">sensor digital</option><option value="sensor analógico">sensor analógico</option>
+</select>
+<span style="display:none" id="clozeAnswer731_132.4">JXUwMDJiJXUwMDE2JXUwMDBiJXUwMDFkJXUwMDFjJXUwMDFkJXUwMDUyJXUwMDQxJXUwMDBmJXUwMDBmJXUwMDBkJXUwMDlmJXUwMDk0JXUwMDBlJXUwMDBhJXUwMDBj</span>
+ </p>
+<p>El sensor de gas es un   
+<label for="clozeBlank731_132.5" class="sr-av">Rellenar huecos (6):</label>
+<select id="clozeBlank731_132.5">
+<option selected="selected"> </option><option value="sensor digital">sensor digital</option><option value="sensor analógico">sensor analógico</option>
+</select>
+<span style="display:none" id="clozeAnswer731_132.5">JXUwMDJiJXUwMDE2JXUwMDBiJXUwMDFkJXUwMDFjJXUwMDFkJXUwMDUyJXUwMDQxJXUwMDBmJXUwMDBmJXUwMDBkJXUwMDlmJXUwMDk0JXUwMDBlJXUwMDBhJXUwMDBj</span>
+ </p>
+<div class="block iDevice_buttons">
+<p>
+<input class="button" type="submit" name="getScore731_132" value="Comprobar"  id="getScore731_132" />
+
+<input type="hidden" name="clozeOtras731_132" id="clozeOtras731_132" value=""/>
+
+<input type="hidden" name="clozeFlag731_132.strictMarking" id="clozeFlag731_132.strictMarking" value="false" />
+<input type="hidden" name="clozeFlag731_132.checkCaps" id="clozeFlag731_132.checkCaps" value="false" />
+<input type="hidden" name="clozeFlag731_132.instantMarking" id="clozeFlag731_132.instantMarking" value="false" />
+<span class="js-hidden js-warning">Habilitar JavaScript</span>
+</p>
+</div>
+<div class="score js-feedback" id="clozeScore731_132"></div>
+</div>
+</form>
+</section></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_rep_lee" id="id654">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_lee.svg)"><h1 class="iDeviceTitle">6. ¿Qué sensores tiene mi placa?</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta654_654_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>La placa <strong>micro:bit</strong> tiene una serie de <strong>sensores</strong> que recogen datos del entorno que pueden ser utilizados por un programa o ser enviados a otro dispositivo.</p>
+<p>A continuación, vemos con detalle estos sensores.</p>
+<div class="exe-fx exe-paginated">
+<h2>Temperatura</h2>
+<p>El sensor de <strong>temperatura</strong> de la placa microbit <strong>está</strong> <strong>dentro</strong> del <strong>microprocesador</strong> por lo que <strong>mide</strong> una <strong>aproximación</strong> de la <strong>temperatura</strong> del <strong>aire</strong> en grados centígrados (en adelante&nbsp;ºC).</p>
+<p>El sensor es poco preciso, debe calibrarse. El rango es de -25ºC a 75ºC.</p>
+<p>En el siguiente vídeo puedes observar más información sobre el sensor de temperatura de la placa micro:bit. Está en inglés, pero no te preocupes porque tiene subtítulos en español.</p>
+<p style="text-align: center;"><iframe width="560" height="314" src="https://www.youtube.com/embed/mrHn8eZ9eqg?rel=0&amp;hl=es&amp;cc_lang_pref=es&amp;cc_load_policy=1" allowfullscreen="allowfullscreen"></iframe><br>Recuerda que si lo necesitas puedes activar los subtítulos del video.</p>
+<h2>Luz</h2>
+<p>La placa microbit dispone de una matriz de LEDs que se utiliza como <strong>sensor</strong> de <strong>luz</strong> que <strong>mide</strong> los <strong>niveles</strong> de <strong>luz</strong> <strong>ambientales</strong>.</p>
+<p>El <strong>rango</strong> de medida es de 0 (oscuridad) a 255 (máxima luz).</p>
+<p>En el siguiente vídeo puedes observar más información sobre el sensor de luz de la placa micro:bit. Está en inglés, pero no te preocupes porque tiene subtítulos en español.</p>
+<p style="text-align: center;"><iframe width="560" height="314" src="https://www.youtube.com/embed/ii0U_FMr-Z4?rel=0&amp;hl=es&amp;cc_lang_pref=es&amp;cc_load_policy=1" allowfullscreen="allowfullscreen"></iframe><br>Recuerda que si lo necesitas puedes activar los subtítulos del video.</p>
+<h2>Brújula</h2>
+<p>La placa micro:bit dispone de una <strong>brújula</strong> <strong>digital</strong> integrada llamada <strong>magnetómetro</strong> que funciona como un sensor que <strong>detecta</strong> <strong>campos magnéticos</strong> como el de la Tierra y por lo tanto, funciona como una brújula permitiendo conocer la <strong>desviación</strong> respecto al <strong>norte</strong> <strong>magnético</strong> de la Tierra, o el de un <em>imán</em>.</p>
+<p>Al iniciar su uso entra en modo <strong>calibración</strong> mediante un juego que consiste en inclinar la placa hasta iluminar todos los píxeles de la matriz de leds.</p>
+<p>También permite <strong>detectar</strong> la <strong>presencia</strong> de <strong>campos</strong> <strong>magnéticos</strong> próximos.</p>
+<p>Puede ser utilizada para <strong>detectar</strong> hacia <strong>dónde</strong> <strong>se</strong> <strong>dirige</strong> y el <strong>movimiento</strong> en grados.</p>
+<p>En el siguiente vídeo puedes observar más información sobre la brújula de la placa micro:bit. Está en inglés, pero no te preocupes porque tiene subtítulos en español.</p>
+<p style="text-align: center;"><iframe width="560" height="314" src="https://www.youtube.com/embed/a3P6LWwPBqM?rel=0&amp;hl=es&amp;cc_lang_pref=es&amp;cc_load_policy=1" allowfullscreen="allowfullscreen"></iframe><br>Recuerda que si lo necesitas puedes activar los subtítulos del video.</p>
+<h2>Acelerómetro</h2>
+<p>Este sensor de la placa micro:bit <strong>detecta</strong> <strong>cuando</strong> esta <strong>se</strong> <strong>inclina</strong> de izquierda a derecha, hacia atrás y hacia adelante y hacia arriba y hacia abajo.</p>
+<p>Así que puede ser utilizada para <strong>detectar</strong> el <strong>movimiento</strong>, conocer <strong>aceleraciones</strong> y <strong>giros</strong> a los que se somete la placa.&nbsp;</p>
+<p>La salida está en mili-g.</p>
+<p>El sensor también <strong>detecta</strong> una pequeña cantidad de acciones, como por ejemplo, <strong>sacudidas</strong>, <strong>inclinación</strong> y <strong>caída</strong> <strong>libre</strong>.</p>
+<p>En el siguiente vídeo puedes observar más información sobre el acelerómetro de la placa micro:bit. Está en inglés, pero no te preocupes porque tiene subtítulos en español.</p>
+<p style="text-align: center;"><iframe width="560" height="314" src="https://www.youtube.com/embed/UT35ODxvmS0?rel=0&amp;hl=es&amp;cc_lang_pref=es&amp;cc_load_policy=1" allowfullscreen="allowfullscreen"></iframe><br>Recuerda que si lo necesitas puedes activar los subtítulos del video.</p>
+<h2>Micrófono</h2>
+<p>La placa micro:bit V2 tiene un <strong>micrófono</strong> integrado que <strong>mide</strong> los <strong>niveles</strong> de <strong>sonido</strong>, por lo que puede hacer la función de sensor de sonido.</p>
+<p>El sensor puede <strong>detectar</strong> <strong>sonidos</strong> fuertes o bajos y <strong>medir</strong> su <strong>nivel</strong> de sonido. El rango de medida es de 0 a 255.</p>
+<p>En el siguiente vídeo puedes observar más información sobre el micrófono de la placa micro:bit. Está en inglés, pero no te preocupes porque tiene subtítulos en español.</p>
+<p style="text-align: center;"><iframe width="560" height="314" src="https://www.youtube.com/embed/waIdGCitbH4?rel=0&amp;hl=es&amp;cc_lang_pref=es&amp;cc_load_policy=1" allowfullscreen="allowfullscreen"></iframe><br>Recuerda que si lo necesitas puedes activar los subtítulos del video.</p>
+<h2>Pulsadores</h2>
+<p>La placa micro:bit tiene <strong>dos</strong> <strong>botones</strong> pulsadores que están etiquetados como A y B. Se puede <strong>detectar</strong> la <strong>pulsación</strong> independiente de cada uno de ellos, así como la pulsación simultánea de ambos.</p>
+<p>Se pueden utilizar como <strong>sensores</strong> de <strong>contacto</strong>. Su <strong>salida</strong> es <strong>digital</strong>, sólo dos posibilidades; pulsado o no pulsado.</p>
+<p>En el siguiente vídeo puedes observar más información sobre los botones de la placa micro:bit. Está en inglés, pero no te preocupes porque tiene subtítulos en español.</p>
+<p style="text-align: center;"><iframe width="560" height="314" src="https://www.youtube.com/embed/hnT0qHM3_hQ?rel=0&amp;hl=es&amp;cc_lang_pref=es&amp;cc_load_policy=1" allowfullscreen="allowfullscreen"></iframe><br>Recuerda que si lo necesitas puedes activar los subtítulos del video.</p>
+<h2>Contacto</h2>
+<p>La placa micro:bit V2 tiene un <strong>botón</strong> <strong>táctil</strong> en el logo integrado que puede ser considerado como un botón extra.</p>
+<p>El logotipo táctil es de tipo capacitivo, así que le permite <strong>detectar</strong> pequeños <strong>cambios</strong> en los <strong>campos</strong> <strong>eléctricos</strong> para saber cuando es presionado (similar al funcionamiento de la pantalla de un teléfono móvil o tableta).</p>
+<p>Puede hacer la función de <strong>sensor</strong> de <strong>contacto</strong>. En los programas se puede utilizar para activar eventos al pulsarlo, tocarlo por primera vez, al soltarlo y al mantenerlo presionado por un tiempo determinado.</p>
+<p>Los pines <strong>0</strong>,<strong> 1</strong> y <strong>2</strong> de la placa también pueden funcionar como botones táctiles cuando se programan como entradas.</p>
+<p>En el siguiente vídeo puedes observar más información sobre el botón táctil de la placa micro:bit. Está en inglés, pero no te preocupes porque tiene subtítulos en español.</p>
+<p style="text-align: center;"><iframe width="560" height="314" src="https://www.youtube.com/embed/spFD3SxxxHQ?rel=0&amp;hl=es&amp;cc_lang_pref=es&amp;cc_load_policy=1" allowfullscreen="allowfullscreen"></iframe><br>Recuerda que si lo necesitas puedes activar los subtítulos del video.</p>
+</div></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-nc-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Reconocimiento No comercial Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="31_seales_de_vida.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>6</strong> de <strong>14</strong></span> <span class="sep">| </span><a href="33_programamos_con_makecode.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_adultos_js.js"></script></body></html>

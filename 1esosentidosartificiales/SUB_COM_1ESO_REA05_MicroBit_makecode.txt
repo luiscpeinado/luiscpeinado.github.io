@@ -1,0 +1,14 @@
+La microbit cuenta con dos pulsadores situados en la parte frontal. Estos dos pulsadores
+son programables. También cuentan con un pulsador en la parte trasera que permite resetear
+la tarjeta. En los dos siguientes microtalleres vamos a ver cómo programar estos pulsadores.
+Estos pulsadores se pueden programar de forma individual pero también se puede detectar
+si se han pulsado los dos a la vez. A continuación veremos cómo programar los pulsadores de
+la microbit. Una de las opciones que tenemos disponibles es programarlos como si fuera
+un evento. En la categoría entrada tenemos el bloque al presionar el botón A. Este es
+el que nos permite programarlo como si fuera un evento. Vamos a crear un programa que muestre
+en el panel LED la letra del pulsador que se acciona. Para ello vamos a duplicar los
+bloques y vamos a seleccionar cada una de las opciones. A continuación en la categoría
+básica cogemos mostrar cadena y sustituimos por el pulsador que se acciona en cada momento.
+Veamos que ha aparecido un tercer botón que es el que simula que se progresionan los dos
+botones a la vez. Si pulsamos el botón A sale ya en el panel la letra A, si presionamos
+el botón B sale la letra B y si pulsamos A más B aparece A más B.

@@ -1,0 +1,44 @@
+WEBVTT
+
+00:00.000 --> 00:10.800
+La microbit cuenta con dos pulsadores situados en la parte frontal. Estos dos pulsadores
+
+00:10.800 --> 00:16.200
+son programables. También cuentan con un pulsador en la parte trasera que permite resetear
+
+00:16.200 --> 00:23.200
+la tarjeta. En los dos siguientes microtalleres vamos a ver cómo programar estos pulsadores.
+
+00:23.200 --> 00:27.560
+Estos pulsadores se pueden programar de forma individual pero también se puede detectar
+
+00:27.560 --> 00:39.000
+si se han pulsado los dos a la vez. A continuación veremos cómo programar los pulsadores de
+
+00:39.000 --> 00:45.440
+la microbit. Una de las opciones que tenemos disponibles es programarlos como si fuera
+
+00:45.440 --> 00:51.640
+un evento. En la categoría entrada tenemos el bloque al presionar el botón A. Este es
+
+00:51.640 --> 00:58.120
+el que nos permite programarlo como si fuera un evento. Vamos a crear un programa que muestre
+
+00:58.120 --> 01:05.880
+en el panel LED la letra del pulsador que se acciona. Para ello vamos a duplicar los
+
+01:05.880 --> 01:16.960
+bloques y vamos a seleccionar cada una de las opciones. A continuación en la categoría
+
+01:16.960 --> 01:44.240
+básica cogemos mostrar cadena y sustituimos por el pulsador que se acciona en cada momento.
+
+01:44.240 --> 01:49.520
+Veamos que ha aparecido un tercer botón que es el que simula que se progresionan los dos
+
+01:49.520 --> 01:56.360
+botones a la vez. Si pulsamos el botón A sale ya en el panel la letra A, si presionamos
+
+01:56.360 --> 02:15.280
+el botón B sale la letra B y si pulsamos A más B aparece A más B.
+
