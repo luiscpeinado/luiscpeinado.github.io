@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>3.4. Prácticas con sensores de distancia | Ascensor para coches </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Luis Carlos Peinado Bravo" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-19"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Ascensor para coches</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Ascensor para coches</a></li>
+   <li><a href="1_el_reto.html" class="daddy">1. El reto</a>
+   <ul class="other-section">
+      <li><a href="comenzamos_nuestro_proyecto.html" class="no-ch">Comenzamos nuestro proyecto</a></li>
+      <li><a href="recursos_para_el_alumnado.html" class="no-ch">Recursos para el alumnado</a></li>
+   </ul>
+   </li>
+   <li><a href="2_arrancamos.html" class="daddy">2. Arrancamos</a>
+   <ul class="other-section">
+      <li><a href="21_placa.html" class="no-ch">2.1. Placa</a></li>
+      <li><a href="22_entornos_de_programacin.html" class="no-ch">2.2. Entornos de programación</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="3_manos_a_la_obra.html" class="current-page-parent daddy">3. Manos a la obra</a>
+   <ul>
+      <li><a href="31_prcticas_con_leds.html" class="no-ch">3.1. Prácticas con LEDs</a></li>
+      <li><a href="32_prcticas_con_interruptores_y_pulsadores.html" class="no-ch">3.2. Prácticas con interruptores y pulsadores</a></li>
+      <li><a href="33_prcticas_con_zumbadores.html" class="no-ch">3.3. Prácticas con zumbadores</a></li>
+      <li id="active"><a href="34_prcticas_con_sensores_de_distancia.html" class="active no-ch">3.4. Prácticas con sensores de distancia</a></li>
+      <li><a href="35_prcticas_con_servos.html" class="no-ch">3.5. Prácticas con servos</a></li>
+   </ul>
+   </li>
+   <li><a href="4_presentamos_el_trabajo.html" class="no-ch">4. Presentamos el trabajo</a></li>
+   <li><a href="5_tareas.html" class="no-ch">5. Tareas</a></li>
+   <li><a href="6_evaluacin.html" class="no-ch">6. Evaluación</a></li>
+   <li><a href="crditos.html" class="no-ch">Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="33_prcticas_con_zumbadores.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="35_prcticas_con_servos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">3.4. Prácticas con sensores de distancia</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id55">
+<div class="iDevice emphasis0" >
+<div id="ta55_2290_2" class="block iDevice_content">
+<div class="exe-text"><p>En este apartado vamos a estudiar el funcionamiento de los sensores de distancia o ultrasónicos y haremos prácticas con ellos.</p>
+<p style="text-align: center;"><img src="ultrasonico.jpg" alt="Sensor de distancia o ultrasónico" title="Sensor de distancia o ultrasónico" width="230" height="230" /></p>
+<p style="text-align: center;"><iframe width="840" height="472" src="https://view.genial.ly/5e57ecdd4fd4c171e2c67ced"></iframe></p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_exp_manipula" id="id56">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_manipula.svg)"><h1 class="iDeviceTitle">PRÁCTICA 12. Midiendo distancias</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta56_2291_2" class="block iDevice_content">
+<div class="exe-text"><p>Vamos a hacer una práctica para estudiar el funcionamiento del sensor de ultrasonidos. En concreto, vamos a medir la distancia entre objetos que están próximos comprendidos entre unos cuantos centímetros. Utilizaremos un led que se encenderá cuando haya un objeto a menos de 30 cm.</p>
+<div class="exe-layout-2-cols exe-clear" style="text-align: left;">
+<div class="exe-col exe-col-1">
+<figure class="exe-figure exe-image position-center license-CC-BY-NC-SA" style="width: 1920px;"><img src="practica12_esq.png" alt="Esquema práctica 12" title="Placa arduino en tinkercad con sensor de distancia" width="2880" height="1416" /></figure>
+</div>
+<div class="exe-col exe-col-2">
+<figure class="exe-figure exe-image position-center license-CC-BY-NC-SA" style="width: 758px;"><img src="practica12_cod.png" alt="Práctica 12 código bloques" title="Práctica 12 código bloques" width="1500" height="882" /></figure>
+</div>
+</div>
+<div class="highlighted-code language-cpp line-numbers">
+<div>
+<pre><code>long readUltrasonicDistance(int triggerPin, int echoPin)
+{
+  pinMode(triggerPin, OUTPUT);  // Clear the trigger
+  digitalWrite(triggerPin, LOW);
+  delayMicroseconds(2);
+  // Sets the trigger pin to HIGH state for 10 microseconds
+  digitalWrite(triggerPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(triggerPin, LOW);
+  pinMode(echoPin, INPUT);
+  // Reads the echo pin, and returns the sound wave travel time in microseconds
+  return pulseIn(echoPin, HIGH);
+}
+
+void setup()
+{
+  pinMode(3, OUTPUT);
+}
+
+void loop()
+{
+  if (0.01723 * readUltrasonicDistance(7, 6) &lt; 30) {
+    digitalWrite(3, HIGH);
+    delay(300); // Wait for 300 millisecond(s)
+    digitalWrite(3, LOW);
+    delay(300); // Wait for 300 millisecond(s)
+  } else {
+    digitalWrite(3, LOW);
+  }
+}</code></pre>
+</div>
+</div>
+<p><br /><br /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_eng_reto" id="id63">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_eng_reto.svg)"><h1 class="iDeviceTitle">PRÁCTICA 13 PROPUESTA. Sensor de aparcamiento para el coche</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta63_2288_2" class="block iDevice_content">
+<div class="exe-text"><p>En esta práctica se plantea el problema de medir la distancia entre objetos simulando el detector de aparcamiento con zumbador. El funcionamiento es el mismo que el que tienen los coches.</p>
+<ul>
+<li>En caso de estar a más de 30 centímetros el zumbador permanecerá desactivado.</li>
+<li>En caso de estar a menos 10 centímetros se activará de forma fija.</li>
+<li>Si se encuentra entre 10 y 30 centímetros irá aumentando la velocidad del zumbador en base a una constante de 5 milisegundos.</li>
+</ul>
+<p><strong><span style="color: #ff0000;">AMPLIACIÓN</span></strong></p>
+<p>Se proponen dos situaciones:</p>
+<ul>
+<li>Añadir leds que parpadean con la misma frecuencia que el pitido, es decir, más o menos rápido según la distancia de los objetos alrededor. Cuanto más cerca más rápido parpadean.</li>
+<li>Añadir leds de colores, verde, amarillo y rojo que se iluminarán dependiendo de la distancia, verde es que no hay peligro, amarillo está cerca, rojo está muy cerca.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="33_prcticas_con_zumbadores.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="35_prcticas_con_servos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_adultos_js.js"></script></body></html>

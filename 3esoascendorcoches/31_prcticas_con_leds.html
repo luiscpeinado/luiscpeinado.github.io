@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>3.1. Prácticas con LEDs | Ascensor para coches </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Luis Carlos Peinado Bravo" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-17"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Ascensor para coches</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Ascensor para coches</a></li>
+   <li><a href="1_el_reto.html" class="daddy">1. El reto</a>
+   <ul class="other-section">
+      <li><a href="comenzamos_nuestro_proyecto.html" class="no-ch">Comenzamos nuestro proyecto</a></li>
+      <li><a href="recursos_para_el_alumnado.html" class="no-ch">Recursos para el alumnado</a></li>
+   </ul>
+   </li>
+   <li><a href="2_arrancamos.html" class="daddy">2. Arrancamos</a>
+   <ul class="other-section">
+      <li><a href="21_placa.html" class="no-ch">2.1. Placa</a></li>
+      <li><a href="22_entornos_de_programacin.html" class="no-ch">2.2. Entornos de programación</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="3_manos_a_la_obra.html" class="current-page-parent daddy">3. Manos a la obra</a>
+   <ul>
+      <li id="active"><a href="31_prcticas_con_leds.html" class="active no-ch">3.1. Prácticas con LEDs</a></li>
+      <li><a href="32_prcticas_con_interruptores_y_pulsadores.html" class="no-ch">3.2. Prácticas con interruptores y pulsadores</a></li>
+      <li><a href="33_prcticas_con_zumbadores.html" class="no-ch">3.3. Prácticas con zumbadores</a></li>
+      <li><a href="34_prcticas_con_sensores_de_distancia.html" class="no-ch">3.4. Prácticas con sensores de distancia</a></li>
+      <li><a href="35_prcticas_con_servos.html" class="no-ch">3.5. Prácticas con servos</a></li>
+   </ul>
+   </li>
+   <li><a href="4_presentamos_el_trabajo.html" class="no-ch">4. Presentamos el trabajo</a></li>
+   <li><a href="5_tareas.html" class="no-ch">5. Tareas</a></li>
+   <li><a href="6_evaluacin.html" class="no-ch">6. Evaluación</a></li>
+   <li><a href="crditos.html" class="no-ch">Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="3_manos_a_la_obra.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="32_prcticas_con_interruptores_y_pulsadores.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">3.1. Prácticas con LEDs</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id48">
+<div class="iDevice emphasis0" >
+<div id="ta48_2291_2" class="block iDevice_content">
+<div class="exe-text"><p>A continuación vamos a realizar algunas prácticas sencillas empleando únicamente luces LED.</p>
+<p><img src="LEDs.jpg" alt="LED" title="LED" width="323" height="215" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p style="text-align: center;"><iframe width="840" height="472" src="https://view.genial.ly/5e59297524fb8c7d46bf87a5/horizontal-infographic-review-diodo-emisor-de-luz-led"></iframe></p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_exp_manipula" id="id2283">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_manipula.svg)"><h1 class="iDeviceTitle">PRÁCTICA 0. Hola Mundo con LED integrado</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta2283_114_2" class="block iDevice_content">
+<div class="exe-text"><p>El primer programa que suele hacerse al aprender un lenguaje de programación nuevo es el "Hola Mundo" que muestra ese mensaje por pantalla. De este modo se comprueba que todo funciona correctamente. Para hacer esto en Arduino, en vez de hacer aparecer este texto, para comprobar que se ha instalado correctamente el IDE, y que funciona bien la placa, se crea un sencillo programa que hace parpadear el LED integrado en la propia placa.</p>
+<p>Sigue los siguientes pasos para hacer esta práctica.</p>
+<ol>
+<li>Abre Tinkercad.</li>
+<li>Añade una placa arduino.</li>
+<li>Comprueba que el código es el siguiente.</li>
+</ol>
+<div class="exe-layout-3-cols exe-clear" style="text-align: left;">
+<div class="exe-col exe-col-1">
+<figure class="exe-figure exe-image position-center license-CC-BY-NC-SA" style="width: 1920px;"><img src="practica0_esq.png" alt="Esquema práctica 0" title="Placa arduino en tinkercad" width="1920" height="880" /></figure>
+</div>
+<div class="exe-col exe-col-2">
+<figure class="exe-figure exe-image position-center license-CC-BY-NC-SA" style="width: 758px;"><img src="practica0_a.png" alt="Práctica 0 código bloques" title="Práctica 0 código bloques" width="758" height="652" /></figure>
+</div>
+<div class="exe-col exe-col-3">
+<figure class="exe-figure exe-image position-center license-CC-BY-NC-SA" style="width: 579px;"><img src="practica0_b.png" alt="Práctica 0 código" title="Práctica 0 código" width="579" height="263" /></figure>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_exp_manipula" id="id43">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_manipula.svg)"><h1 class="iDeviceTitle">PRÁCTICA 1. Hola Mundo con LED externo</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta43_2288_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">En esta práctica utilizaremos componentes conectados a la placa Arduino. Concretamente, un <span style="color: #ff6600;">LED</span> conectado al <span style="color: #ff6600;">pin 5</span> de la placa que irá protegido con una resistencia de 220Ω (rojo-rojo-marrón).</p>
+<p style="text-align: justify;">Una vez realizadas las conexiones, programaremos la placa para que el LED se encienda y se apague a intervalos de 1 segundo.</p>
+<p style="text-align: justify;"></p>
+<div class="exe-layout-2-cols exe-clear" style="text-align: left;">
+<div class="exe-col exe-col-1">
+<figure class="exe-figure exe-image position-center license-CC-BY-NC-SA" style="width: 1920px;"><img src="practica1_esq.png" alt="Esquema práctica 1" title="Placa arduino en tinkercad con un led" width="1920" height="873" /></figure>
+</div>
+<div class="exe-col exe-col-2">
+<figure class="exe-figure exe-image position-center license-CC-BY-NC-SA" style="width: 758px;"><img src="practica1_cod.png" alt="Práctica 1 código bloques" title="Práctica 1 código bloques" width="1386" height="685" /></figure>
+</div>
+<div class="exe-col exe-col-3"></div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_exp_manipula" id="id46">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_manipula.svg)"><h1 class="iDeviceTitle">PRÁCTICA 2. Luces de policía</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta46_2289_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">En esta práctica vamos a simular las luces de un coche de policía. Para ello utilizaremos dos LEDs, el <span style="color: #ff6600;">LED rojo</span> conectado al <span style="color: #ff6600;">pin 3</span>, y el <span style="color: #3366ff;">LED azul</span> en el<span style="color: #3366ff;"> pin 5. <span style="color: #000000;">Recuerda que debes protegerlos con su correspondiente resistencia de 220Ω (rojo-rojo-marrón).</span></span></p>
+<p style="text-align: justify;">Una vez realizadas las conexiones, realizaremos el programa para que se enciendan y apaguen de forma alterna en intervalos de 0.5 segundos.</p>
+<div class="exe-layout-2-cols exe-clear" style="text-align: left;">
+<div class="exe-col exe-col-1">
+<figure class="exe-figure exe-image position-center license-CC-BY-NC-SA" style="width: 1920px;"><img src="practica2_esq.png" alt="Esquema práctica 2" title="Placa arduino en tinkercad con dos leds" width="1920" height="870" /></figure>
+</div>
+<div class="exe-col exe-col-2">
+<figure class="exe-figure exe-image position-center license-CC-BY-NC-SA" style="width: 758px;"><img src="practica2_cod.png" alt="Práctica 2 código bloques" title="Práctica 2 código bloques" width="1388" height="471" /></figure>
+</div>
+<div class="exe-col exe-col-3"></div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_eng_reto" id="id47">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_eng_reto.svg)"><h1 class="iDeviceTitle">PRÁCTICA 3 PROPUESTA. Semáforo</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta47_2290_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">En esta práctica hay que realizar la simulación de un semáforo para coches con 3 LEDs (verde, amarillo y rojo).</p>
+<p style="text-align: justify;">Conecta cada uno de los LEDs a un pin y protégelos con la correspondiente resistencia. El funcionamiento será como sigue:</p>
+<ul>
+<li style="text-align: justify;">El led <span style="color: #008000;">verde</span> se encenderá durante 7 segundos.</li>
+<li style="text-align: justify;">El led <span style="background-color: #808080; color: #ffff00;">amarillo</span> se encenderá durante 2 segundos.</li>
+<li style="text-align: justify;">El led <span style="color: #ff6600;">rojo</span> se encenderá durante 5 segundos.</li>
+<li style="text-align: justify;">Toda esta secuencia se repetirá en bucle.</li>
+</ul>
+<p style="text-align: justify;"><span style="color: #ff0000;"><strong>AMPLIACIÓN:</strong></span></p>
+<p style="text-align: justify;">Añadir al semáforo dos luces más para los peatones. Mientras las luces verde y amarilla del semáforo principal están encendidas, la luz roja de los peatones también lo está. Cuando se enciende la luz roja del semáforo principal, se enciende la luz verde de los peatones.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="3_manos_a_la_obra.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="32_prcticas_con_interruptores_y_pulsadores.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_adultos_js.js"></script></body></html>
